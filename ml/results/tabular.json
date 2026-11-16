@@ -1,0 +1,220 @@
+{
+ "flex_taxa_queima": {
+  "descricao": "FLEX: taxa de queima da gota (mm²/s)",
+  "tipo": "regressao",
+  "entradas": [
+   "o2_pct",
+   "pressure_kpa",
+   "co2_pct",
+   "he_pct",
+   "d0_mm",
+   "fuel"
+  ],
+  "n": 258,
+  "n_grupos": 80,
+  "n_teste": 40,
+  "avisos": [],
+  "modelos": {
+   "ridge": {
+    "validacao_cruzada": {
+     "r2": 0.666,
+     "mae": 0.0534,
+     "mae_ingenuo": 0.1127
+    },
+    "teste": {
+     "r2": 0.924,
+     "mae": 0.0236,
+     "mae_ingenuo": 0.09
+    }
+   },
+   "floresta": {
+    "validacao_cruzada": {
+     "r2": 0.565,
+     "mae": 0.0599,
+     "mae_ingenuo": 0.1127
+    },
+    "teste": {
+     "r2": 0.823,
+     "mae": 0.0326,
+     "mae_ingenuo": 0.09
+    }
+   }
+  }
+ },
+ "flex_extincao": {
+  "descricao": "FLEX: a chama apaga antes de a gota acabar?",
+  "tipo": "classificacao",
+  "entradas": [
+   "o2_pct",
+   "pressure_kpa",
+   "co2_pct",
+   "he_pct",
+   "d0_mm",
+   "fuel"
+  ],
+  "n": 213,
+  "n_grupos": 73,
+  "n_teste": 23,
+  "avisos": [],
+  "modelos": {
+   "logistica": {
+    "validacao_cruzada": {
+     "auc": 0.786,
+     "acuracia_balanceada": 0.742
+    },
+    "teste": {
+     "auc": 0.895,
+     "acuracia_balanceada": 0.743
+    }
+   },
+   "floresta": {
+    "validacao_cruzada": {
+     "auc": 0.74,
+     "acuracia_balanceada": 0.639
+    },
+    "teste": {
+     "auc": 0.816,
+     "acuracia_balanceada": 0.572
+    }
+   }
+  },
+  "positivos": 186
+ },
+ "cfig_ignicao": {
+  "descricao": "CFI-G: a chama acende?",
+  "tipo": "classificacao",
+  "entradas": [
+   "o2_pct",
+   "pressure_kpa",
+   "fuel",
+   "form"
+  ],
+  "n": 333,
+  "n_grupos": 23,
+  "n_teste": 55,
+  "avisos": [],
+  "modelos": {
+   "logistica": {
+    "validacao_cruzada": {
+     "auc": 0.515,
+     "acuracia_balanceada": 0.512
+    },
+    "teste": {
+     "auc": 0.483,
+     "acuracia_balanceada": 0.508
+    }
+   },
+   "floresta": {
+    "validacao_cruzada": {
+     "auc": 0.509,
+     "acuracia_balanceada": 0.524
+    },
+    "teste": {
+     "auc": 0.67,
+     "acuracia_balanceada": 0.557
+    }
+   }
+  },
+  "positivos": 263
+ },
+ "cfig_autoextincao": {
+  "descricao": "CFI-G: depois de acesa, a chama se apaga sozinha?",
+  "tipo": "classificacao",
+  "entradas": [
+   "o2_pct",
+   "pressure_kpa",
+   "fuel",
+   "form"
+  ],
+  "n": 263,
+  "n_grupos": 23,
+  "n_teste": 41,
+  "avisos": [],
+  "modelos": {
+   "logistica": {
+    "validacao_cruzada": {
+     "auc": 0.673,
+     "acuracia_balanceada": 0.615
+    },
+    "teste": {
+     "auc": 0.783,
+     "acuracia_balanceada": 0.778
+    }
+   },
+   "floresta": {
+    "validacao_cruzada": {
+     "auc": 0.809,
+     "acuracia_balanceada": 0.775
+    },
+    "teste": {
+     "auc": 0.606,
+     "acuracia_balanceada": 0.517
+    }
+   }
+  },
+  "positivos": 175
+ },
+ "zarm_propagacao": {
+  "descricao": "ZARM: velocidade de propagação no filme de PMMA (mm/s)",
+  "tipo": "regressao",
+  "entradas": [
+   "o2_pct",
+   "pressure_kpa",
+   "flow_cm_s"
+  ],
+  "n": 22,
+  "n_grupos": 22,
+  "n_teste": 3,
+  "avisos": [
+   "menos de 50 ensaios: serve para ver tendência, não para afirmar desempenho"
+  ],
+  "modelos": {
+   "ridge": {
+    "validacao_cruzada": {
+     "r2": 0.812,
+     "mae": 0.2521,
+     "mae_ingenuo": 0.9348
+    }
+   },
+   "floresta": {
+    "validacao_cruzada": {
+     "r2": 0.823,
+     "mae": 0.2802,
+     "mae_ingenuo": 0.9348
+    }
+   }
+  }
+ },
+ "zarm_barreira": {
+  "descricao": "ZARM: a barreira de metal apaga a chama?",
+  "tipo": "classificacao",
+  "entradas": [
+   "o2_pct",
+   "pressure_kpa",
+   "gap_mm",
+   "material"
+  ],
+  "n": 45,
+  "n_grupos": 25,
+  "n_teste": 3,
+  "avisos": [
+   "menos de 10 casos na classe rara: o número abaixo é instável",
+   "menos de 50 ensaios: serve para ver tendência, não para afirmar desempenho"
+  ],
+  "modelos": {
+   "logistica": {
+    "validacao_cruzada": {
+     "auc": 0.684,
+     "acuracia_balanceada": 0.645
+    }
+   },
+   "floresta": {
+    "validacao_cruzada": {
+     "auc": 0.543,
+     "acuracia_balanceada": 0.645
+    }
+   }
+  },
+  "positivos": 5
+ }
+}

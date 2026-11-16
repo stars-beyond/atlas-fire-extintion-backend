@@ -1,0 +1,50 @@
+{
+ "accession": "PSI-115",
+ "investigationAcronym": "",
+ "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+ "description": "",
+ "objective": "The objective of this investigation was to use numerical simulation to explore the influence of gravity on pyrolysis smoke growth from a fundamental perspective. The intention of this effort is to quantify the differences between microgravity and Earth gravity smoke, and to identify the fluid dynamic mechanisms that cause the differences.",
+ "approach": "The formation and growth of dibutyl-phthalate (DBP) particles in Earth gravity and microgravity environments was simulated. Direct numerical simulation via a Navier-Stokes nodal approach was utlilized. The smoke originates from pyrolysis vapor expelled from a heated sample in a geometry similar to that considered in the SAME experiments. This study considered two cross-flow velocities of sufficiently low speed that buoyancy cannot be neglected in the presence of gravity. Simulations are presented to assess the dependence of particle size distributions on thermophoresis, particle settling, and flow geometry. The final report for this investigation introduces the simulation and modeling methodology, followed by a description of the flow geometry and the parameter space under consideration.The differences in the wake geometry attributable to buoyancy for the lower of two flow speeds was examined.  Instantaneous scalar fields were used to describe particle accumulation and growth in the buoyant and non-buoyant wakes that form downstream of the hot vapor source.",
+ "hypothesis": "Without buoyancy, mixing and heat transfer are reduced, the time-temperature history of the combustion vapors (or particle precursors) and particle trajectories are significantly altered, changing the composition of the smoke. The chemical composition of the burning material also affects the characteristics of the smoke generated.",
+ "researchImpacts": "Models and tools that characterize particles generated as smoke can be used to ascertain how temperature, gravity, and material properties affect the smoke produced. This would directly lead to better smoke detection devices and prevent fires that can lead to loss of materiel and loss of life.",
+ "experimentHardware": "",
+ "experimentHardwareLink": "",
+ "flightProgram": "Not Applicable",
+ "projectType": "Ground Investigation",
+ "researchArea": "Combustion Science",
+ "subResearchArea": "Smoke Aerosol, Combustion Simulation",
+ "investigationStartDate": "01-30-2017",
+ "investigationEndDate": "12-31-2019",
+ "managingNasaCenter": "Glenn Research Center (GRC)",
+ "doi": "10.60555/q0v5-1v28",
+ "totalFileSize": 264404901.0,
+ "releaseDate": "18-Sep-2024",
+ "funding": "NNX17AF08A",
+ "licenseName": "Creative Commons Zero v1.0 Universal",
+ "publications": [],
+ "contacts": [
+  {
+   "firstName": "Sean",
+   "lastName": "Garrick",
+   "affiliation": "University of Illinois"
+  },
+  {
+   "firstName": "Michael",
+   "lastName": "Hicks",
+   "affiliation": "NASA GRC"
+  }
+ ],
+ "files": [
+  {
+   "file_name": "PSI-115_Reports_NNX17AF08A_FinalReport.pdf",
+   "file_size": 10617514.0,
+   "category": "Reports"
+  },
+  {
+   "file_name": "PSI-115_Science Documents_DataOrganizationDocument.pdf",
+   "file_size": 96899.0,
+   "category": "Science Documents"
+  }
+ ],
+ "file_count": 47
+}

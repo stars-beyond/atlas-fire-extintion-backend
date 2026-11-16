@@ -1,0 +1,59 @@
+{
+ "schema": "atlas.thermal/1",
+ "model": {
+  "name": "Atlas-MachineL",
+  "url": "https://github.com/stars-beyond/Atlas-MachineL",
+  "commit": "68e6633",
+  "trials": 51
+ },
+ "nets": [
+  "f0_s0.onnx",
+  "f0_s1.onnx",
+  "f1_s0.onnx",
+  "f1_s1.onnx",
+  "f2_s0.onnx",
+  "f2_s1.onnx",
+  "f3_s0.onnx",
+  "f4_s0.onnx"
+ ],
+ "k": 4,
+ "mm_px": 0.38,
+ "fps": 8.33,
+ "t_ref": 20.0,
+ "t_scale": 300.0,
+ "cond_scale": [
+  30.0,
+  100.0,
+  15.0
+ ],
+ "front_threshold_c": 250.0,
+ "train_range": {
+  "o2_pct": [
+   21.0,
+   36.06
+  ],
+  "pressure_kpa": [
+   60.0,
+   103.06
+  ],
+  "flow_cm_s": [
+   8.75,
+   20.0
+  ]
+ },
+ "sample": {
+  "trial": "zarm18479713:147",
+  "o2_pct": 28.59000015258789,
+  "pressure_kpa": 84.19000244140625,
+  "flow_cm_s": 9.430000305175781,
+  "frames": 67,
+  "h": 112,
+  "w": 104,
+  "note": "part of the networks saw this run in training"
+ },
+ "license": "CC-BY-NC-4.0",
+ "attribution": [
+  "Ries, Krieger, Meyer et al., Flame Spread and Heat Transfer over Discrete Fuels separated by Metal Barriers under Microgravity, Zenodo 10.5281/zenodo.18479713",
+  "Ries, Krieger, Meyer et al., Infra Red Recordings of Opposed-Flow Flame Propagation on Discrete PMMA Sheets, Zenodo 14959942"
+ ]
+}

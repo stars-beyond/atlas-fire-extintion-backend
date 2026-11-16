@@ -1,0 +1,11 @@
+data/cache/
+data/resources/
+data/rag/
+.env
+api/atlas-api
+__pycache__/
+*.pyc
+.DS_Store
+deploy/certs/
+.deploy/
+.env.*

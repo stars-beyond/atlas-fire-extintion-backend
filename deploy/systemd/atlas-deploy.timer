@@ -1,0 +1,11 @@
+[Unit]
+Description=Atlas: verifica o GitHub a cada @INTERVAL@
+
+[Timer]
+OnBootSec=30s
+OnUnitInactiveSec=@INTERVAL@
+AccuracySec=1s
+Unit=atlas-deploy.service
+
+[Install]
+WantedBy=timers.target

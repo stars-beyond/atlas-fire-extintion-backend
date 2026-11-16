@@ -1,0 +1,6 @@
+# Achados do trivy (job scan do CI) que a equipe aceitou.
+
+# DS-0002: os contêineres rodam como root. Decisão da equipe (2026-11-15): fica assim por enquanto; a API, o banco e
+# os modelos não ficam expostos à internet, só o nginx.
+DS-0002
+AVD-DS-0002

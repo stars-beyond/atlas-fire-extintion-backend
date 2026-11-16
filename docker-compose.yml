@@ -1,0 +1,125 @@
+name: atlas-fire-extintion-backend
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: atlas
+      POSTGRES_PASSWORD: atlas
+      POSTGRES_DB: atlas
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "${DB_PORT:-54329}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U atlas -d atlas"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+
+  embedder:
+    build: ./brain
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health').status==200 else 1)"]
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 10s
+
+  ingest:
+    build: ./brain
+    command: ["python", "-m", "atlas.ingest"]
+    environment:
+      DATABASE_URL: postgresql://atlas:atlas@db:5432/atlas
+      ATLAS_NETWORK: ${ATLAS_NETWORK:-auto}
+      ATLAS_DOCS: ${ATLAS_DOCS:-fetch}
+      ATLAS_DOC_BUDGET_MB: ${ATLAS_DOC_BUDGET_MB:-700}
+      ATLAS_FORCE: ${ATLAS_FORCE:-0}
+    volumes:
+      - ./data:/data
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  # RAG da equipe (rag-Carlin): perguntas e respostas com fontes, fórmulas e histórico.
+  # As coleções ficam no pgvector deste banco e são indexadas sozinhas pelo rag-index
+  # a partir de rag/data/flame_v6/corpus.json, mais os PDFs do PSI que a ingestão do Atlas baixou e o Carlin não tem.
+  # Sem OPENAI_API_KEY ele sobe mas fica indisponível, e a API usa a busca local.
+  rag-index:
+    build: &rag_build
+      context: ./rag
+      dockerfile: Dockerfile.atlas
+    command: ["python", "-m", "atlas_pg.index"]
+    environment: &rag_env
+      RAG_PG_URL: postgresql://atlas:atlas@db:5432/atlas
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-large}
+      CHAT_MODEL: ${CHAT_MODEL:-gpt-4o-mini}
+      QDRANT_URL: ""                       # o Qdrant saiu; o nome da coleção vira o nome da tabela no pgvector
+      QDRANT_COLLECTION_NAME: ${RAG_COLLECTION:-flame_freefall_2026_v6}
+      # corpus do Carlin + PDFs do PSI que só o Atlas tem (ponte em rag/atlas_pg/bridge.py); o rag lê o resultado
+      FLAME_CORPUS_BASE: data/flame_v6/corpus.json
+      FLAME_CORPUS: /app/state/corpus.json
+      ATLAS_PSI_MANIFEST: /atlas-data/rag/psi_docs.json
+      ATLAS_DATA: /atlas-data
+      # Desligado: data/formulas_v2 são 8.385 fórmulas e valores transcritos por GPT de imagens dos PDFs, nenhum
+      # revisado (machine_transcription_unreviewed). Ficam só as fórmulas revisadas por gente e os valores do texto.
+      FLAME_FORMULAS: ""
+      DATABASE_URL: sqlite:////app/state/chat.db
+    volumes:
+      - rag_state:/app/state
+      - ./data:/atlas-data:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      ingest:
+        condition: service_completed_successfully
+    restart: "no"
+
+  rag:
+    build: *rag_build
+    environment: *rag_env
+    volumes:
+      - rag_state:/app/state
+    depends_on:
+      rag-index:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health').status==200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  api:
+    build: ./api
+    environment:
+      DATABASE_URL: postgresql://atlas:atlas@db:5432/atlas
+      EMBEDDER_URL: http://embedder:8000
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ATLAS_MODEL: ${ATLAS_MODEL:-claude-opus-5-5}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      CHAT_MODEL: ${CHAT_MODEL:-}
+      RAG_URL: http://rag:8000
+      SIM_CONFIG: /data/sim/lab3d.json
+      EXTERNAL_TESTS: /data/external/zarm.json
+      PORT: "8787"
+    volumes:
+      - ./data/seed/sim:/data/sim:ro
+      - ./data/seed/external:/data/external:ro
+    ports:
+      - "${API_PORT:-8787}:8787"
+    depends_on:
+      db:
+        condition: service_healthy
+      embedder:
+        condition: service_healthy
+      ingest:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:
+  rag_state:

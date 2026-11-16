@@ -1,0 +1,64 @@
+# Produção (VPS): soma-se ao docker-compose.yml.
+#   docker compose -f docker-compose.yml -f deploy/compose.prod.yml up -d --build
+# Só o nginx fica exposto, e só na 443 (atrás do Cloudflare, SSL "Full"). Banco e API saem da internet.
+# A API não sobe por aqui: roda em blue/green (deploy/api.compose.yml, deploy/lib.sh).
+# Atenção: porta publicada pelo Docker passa por fora do ufw; quem decide o que abre é este arquivo.
+
+# Log de cada contêiner limitado a 3 arquivos de 10 MB: sem isso o disco da VPS enche com o tempo.
+x-logs: &logs
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+# Prioridades, não tetos: valem só quando a máquina está disputada, e por isso não dependem do tamanho da VPS.
+#   cpu_shares     peso na disputa por CPU (padrão 1024). O que atende o visitante (nginx, API) pesa mais que
+#                  os modelos (embedder, RAG) e muito mais que a ingestão.
+#   oom_score_adj  quem o kernel mata primeiro se a memória acabar: a ingestão e os modelos, antes do banco.
+# O banco fica como está no docker-compose.yml de propósito: mudar a definição dele faria o deploy recriar o
+# contêiner (reinício do Postgres).
+services:
+  db:
+    ports: !reset []
+    restart: unless-stopped
+  embedder:
+    restart: unless-stopped
+    cpu_shares: 512
+    oom_score_adj: 300
+    logging: *logs
+  ingest:
+    cpu_shares: 256
+    oom_score_adj: 500
+    logging: *logs
+  rag-index:
+    cpu_shares: 256
+    oom_score_adj: 500
+    logging: *logs
+  rag:
+    restart: unless-stopped
+    cpu_shares: 512
+    oom_score_adj: 300
+    logging: *logs
+  # API do esquema antigo. O deploy.sh atual não a sobe mais (lista os serviços em STACK_SERVICES) e a remove depois
+  # da primeira troca blue/green; ela continua declarada só para o deploy.sh antigo, que roda uma vez com estes
+  # arquivos no merge, funcionar como sempre. A API de produção é deploy/api.compose.yml.
+  api:
+    ports: !reset []
+    restart: unless-stopped
+  nginx:
+    image: nginx:1.27-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+    restart: unless-stopped
+    ports:
+      # Só IPv4: o Cloudflare chega pelo registro A. Em IPv6 a conexão passaria pelo docker-proxy e chegaria ao
+      # nginx com o endereço da rede interna do Docker, sem o IP de quem conectou.
+      - "0.0.0.0:443:443"
+    volumes:
+      # Pastas inteiras, não arquivo por arquivo: o git reset troca os arquivos por outros novos, e um arquivo
+      # montado sozinho continuaria apontando para o antigo (o nginx recarregaria a configuração velha).
+      - ./deploy/nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./deploy/nginx/snippets:/etc/nginx/snippets:ro
+      - ${ACTIVE_DIR:-/etc/atlas/active}:/etc/nginx/active:ro   # cor ativa da API (api.conf), escrita pelo deploy
+      - ./deploy/certs:/etc/nginx/certs:ro
+    cpu_shares: 2048
+    oom_score_adj: -200
+    logging: *logs

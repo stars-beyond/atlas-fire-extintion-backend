@@ -1,0 +1,114 @@
+{
+  "schema": "lab3d.spread/1",
+  "date": "2026-11-15",
+  "engine": "lab3d v2",
+  "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+  "tier": "padrao",
+  "burn_time_s": 8,
+  "criterion": "flat slab ignited at its downstream edge, flame spreading against the airflow; the surface front is the most upstream point where the top layer of the solid passes 250 °C (the threshold of the infrared tests), the flame front where the gas up to 1 cm above passes 1200 K; the speed is a straight-line fit of the front position between 20% and 80% of the slab length",
+  "sample": {
+    "material": "pmma",
+    "shape": "slab",
+    "length_cm": 3.6,
+    "thickness_cm": 0.35,
+    "width_cm": 3.6,
+    "cell_cm": 0.133
+  },
+  "gravity": 0,
+  "physics": {
+    "K0": 210000000,
+    "HREF": 0.19,
+    "TA": 15000,
+    "RAD": 2,
+    "BETA": 450,
+    "D0": 1,
+    "EXP": 0.1,
+    "BLOW": 1,
+    "PR": 0.7,
+    "DT": 0.006
+  },
+  "material_params": {
+    "s": 1.92,
+    "pyrK": 650,
+    "M": 70,
+    "L": 0.6,
+    "inhib": 1
+  },
+  "measured": {
+    "what": "continuous 0.075 mm PMMA film, 0 g, opposed flow, ZARM drop tower",
+    "source": "Ries, Krieger, Meyer et al., Zenodo 10.5281/zenodo.18479713 (index.csv)",
+    "license": "CC-BY-NC-4.0"
+  },
+  "points": [
+    {
+      "trial": "zarm18479713:96",
+      "o2_pct": 21.63,
+      "pressure_kpa": 103.06,
+      "flow_cm_s": 10.05,
+      "measured_mm_s": 2.419,
+      "sim_surface_mm_s": 4.17,
+      "sim_flame_mm_s": 2.46,
+      "reached_cm": [
+        3.07,
+        2.8
+      ],
+      "burning_end": true
+    },
+    {
+      "trial": "zarm18479713:144",
+      "o2_pct": 21.66,
+      "pressure_kpa": 100.65,
+      "flow_cm_s": 10.4,
+      "measured_mm_s": 2.528,
+      "sim_surface_mm_s": 3.03,
+      "sim_flame_mm_s": 2.58,
+      "reached_cm": [
+        2.8,
+        2.67
+      ],
+      "burning_end": true
+    },
+    {
+      "trial": "zarm18479713:95",
+      "o2_pct": 23.39,
+      "pressure_kpa": 99.73,
+      "flow_cm_s": 9.54,
+      "measured_mm_s": 2.964,
+      "sim_surface_mm_s": 9.16,
+      "sim_flame_mm_s": 8.33,
+      "reached_cm": [
+        3.47,
+        3.2
+      ],
+      "burning_end": true
+    },
+    {
+      "trial": "zarm18479713:94",
+      "o2_pct": 28.43,
+      "pressure_kpa": 82.06,
+      "flow_cm_s": 9.41,
+      "measured_mm_s": 4.368,
+      "sim_surface_mm_s": 21.35,
+      "sim_flame_mm_s": 22.01,
+      "reached_cm": [
+        3.47,
+        3.6
+      ],
+      "burning_end": true
+    },
+    {
+      "trial": "zarm18479713:93",
+      "o2_pct": 35.84,
+      "pressure_kpa": 70.64,
+      "flow_cm_s": 8.75,
+      "measured_mm_s": 6.345,
+      "sim_surface_mm_s": 39.14,
+      "sim_flame_mm_s": 39.39,
+      "reached_cm": [
+        3.47,
+        3.6
+      ],
+      "burning_end": true
+    }
+  ]
+}

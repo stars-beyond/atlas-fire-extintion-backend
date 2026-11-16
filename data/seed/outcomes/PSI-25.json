@@ -1,0 +1,7101 @@
+{
+ "investigation": "PSI-25",
+ "report": {
+  "title": "Burning and Suppression of Solids–II (BASS-II) Summary Report",
+  "number": "NASA/TM-20210011385",
+  "url": "https://ntrs.nasa.gov/citations/20210011385",
+  "section": "Appendix A, Tables A.1 to A.6"
+ },
+ "table": "PSI-25_Experimental table_BASS-II.csv",
+ "calibration": "PSI-25_Reference Data_Fan calibration data.xlsx",
+ "method": "Text rules over the observations column of appendix A, matched to the PSI table by test number. Air speed: potentiometer setting converted with the fan calibration (U = 1.0066 × Air Display), median across calibration days, with minimum and maximum. Hand corrections in PSI-25.overrides.json.",
+ "summary": {
+  "tests": 129,
+  "found": 126,
+  "with_observation": 125,
+  "with_end": 101,
+  "ends": {
+   "fan_off": 8,
+   "unknown": 6,
+   "burned": 22,
+   "burnout": 7,
+   "quench": 49,
+   "not_sustained": 16,
+   "blowoff": 12,
+   "self": 8,
+   "not_ignited": 1
+  },
+  "points": {
+   "queimou": 104,
+   "vento_nao_apagou": 6,
+   "apagou_pouco_ar": 48,
+   "nao_sustentou": 16,
+   "apagou_vento": 12,
+   "apagou_sozinha": 8
+  },
+  "reviewed": 22,
+  "audit": 16
+ },
+ "calibration_curves": {
+  "0": [
+   {
+    "pot": 0.0,
+    "air_median": 0.0,
+    "air_min": 0.0,
+    "air_max": 0.0,
+    "days": 10
+   },
+   {
+    "pot": 1.0,
+    "air_median": 10.0,
+    "air_min": 0.0,
+    "air_max": 11.0,
+    "days": 3
+   },
+   {
+    "pot": 1.6,
+    "air_median": 11.0,
+    "air_min": 11.0,
+    "air_max": 11.0,
+    "days": 1
+   },
+   {
+    "pot": 2.0,
+    "air_median": 16.0,
+    "air_min": 9.6,
+    "air_max": 16.4,
+    "days": 7
+   },
+   {
+    "pot": 4.0,
+    "air_median": 26.0,
+    "air_min": 17.2,
+    "air_max": 27.4,
+    "days": 7
+   },
+   {
+    "pot": 6.0,
+    "air_median": 36.0,
+    "air_min": 23.8,
+    "air_max": 38.4,
+    "days": 7
+   },
+   {
+    "pot": 8.0,
+    "air_median": 45.0,
+    "air_min": 31.2,
+    "air_max": 49.0,
+    "days": 7
+   },
+   {
+    "pot": 10.0,
+    "air_median": 54.0,
+    "air_min": 38.4,
+    "air_max": 59.0,
+    "days": 9
+   }
+  ],
+  "1": [
+   {
+    "pot": 0.0,
+    "air_median": 0.0,
+    "air_min": 0.0,
+    "air_max": 0.0,
+    "days": 2
+   },
+   {
+    "pot": 0.5,
+    "air_median": 2.0,
+    "air_min": 2.0,
+    "air_max": 2.0,
+    "days": 2
+   },
+   {
+    "pot": 1.0,
+    "air_median": 4.0,
+    "air_min": 3.0,
+    "air_max": 5.0,
+    "days": 3
+   },
+   {
+    "pot": 2.0,
+    "air_median": 7.0,
+    "air_min": 6.4,
+    "air_max": 8.6,
+    "days": 5
+   },
+   {
+    "pot": 4.0,
+    "air_median": 13.0,
+    "air_min": 11.7,
+    "air_max": 15.6,
+    "days": 5
+   },
+   {
+    "pot": 6.0,
+    "air_median": 20.0,
+    "air_min": 17.7,
+    "air_max": 23.0,
+    "days": 5
+   },
+   {
+    "pot": 8.0,
+    "air_median": 27.0,
+    "air_min": 23.8,
+    "air_max": 31.0,
+    "days": 5
+   },
+   {
+    "pot": 10.0,
+    "air_median": 33.0,
+    "air_min": 28.25,
+    "air_max": 39.0,
+    "days": 6
+   }
+  ],
+  "2": [
+   {
+    "pot": 0.0,
+    "air_median": 0.0,
+    "air_min": 0.0,
+    "air_max": 0.0,
+    "days": 21
+   },
+   {
+    "pot": 0.5,
+    "air_median": 1.0,
+    "air_min": 0.0,
+    "air_max": 3.0,
+    "days": 12
+   },
+   {
+    "pot": 1.0,
+    "air_median": 4.375,
+    "air_min": 2.35,
+    "air_max": 5.0,
+    "days": 18
+   },
+   {
+    "pot": 2.0,
+    "air_median": 7.0,
+    "air_min": 5.0,
+    "air_max": 8.0,
+    "days": 22
+   },
+   {
+    "pot": 4.0,
+    "air_median": 13.0,
+    "air_min": 8.1,
+    "air_max": 15.0,
+    "days": 22
+   },
+   {
+    "pot": 6.0,
+    "air_median": 20.0,
+    "air_min": 12.1,
+    "air_max": 22.0,
+    "days": 22
+   },
+   {
+    "pot": 8.0,
+    "air_median": 27.0,
+    "air_min": 17.1,
+    "air_max": 30.0,
+    "days": 22
+   },
+   {
+    "pot": 10.0,
+    "air_median": 33.5,
+    "air_min": 22.0,
+    "air_max": 37.0,
+    "days": 22
+   }
+  ]
+ },
+ "boundaries": [
+  {
+   "form": "bastão de acrílico",
+   "published": {
+    "equation": "X_O2 = 6·exp(−0.5·a) + 0.0167·a + 13.4",
+    "stretch": "a = 3/2 · (U/r) · (r/r0)^½, with r0 = 0.318 cm",
+    "coef": {
+     "A": 6.0,
+     "k": 0.5,
+     "B": 0.0167,
+     "C": 13.4,
+     "r0_cm": 0.318
+    },
+    "source": "NASA/TM-20210011385, Eq. (6.1), p. 75",
+    "url": "https://ntrs.nasa.gov/citations/20210011385",
+    "minimum": "about 13.5% O₂ with a between 8 and 12 1/s",
+    "applies_to": "acrylic rods with the flame spreading in the direction of the airflow (concurrent), in microgravity and at 1 atm"
+   },
+   "check": {
+    "blowoff": {
+     "n": 9,
+     "mean_diff_o2": 0.28,
+     "rms_diff_o2": 0.53,
+     "max_abs_diff_o2": 1.37,
+     "points": [
+      {
+       "test": "O5a",
+       "o2": 14.2,
+       "flow_cm_s": 13.1,
+       "stretch_s": 43.7,
+       "curve_o2": 14.13,
+       "diff_o2": 0.07
+      },
+      {
+       "test": "O7",
+       "o2": 15.5,
+       "flow_cm_s": 23.8,
+       "stretch_s": 112.4,
+       "curve_o2": 15.28,
+       "diff_o2": 0.22
+      },
+      {
+       "test": "O8b",
+       "o2": 15.2,
+       "flow_cm_s": 15.7,
+       "stretch_s": 74.1,
+       "curve_o2": 14.64,
+       "diff_o2": 0.56
+      },
+      {
+       "test": "O9",
+       "o2": 14.8,
+       "flow_cm_s": 11.7,
+       "stretch_s": 55.2,
+       "curve_o2": 14.32,
+       "diff_o2": 0.48
+      },
+      {
+       "test": "O10",
+       "o2": 16.1,
+       "flow_cm_s": 16.9,
+       "stretch_s": 79.8,
+       "curve_o2": 14.73,
+       "diff_o2": 1.37
+      },
+      {
+       "test": "O11",
+       "o2": 14.8,
+       "flow_cm_s": 20.1,
+       "stretch_s": 94.9,
+       "curve_o2": 14.98,
+       "diff_o2": -0.18
+      },
+      {
+       "test": "O17",
+       "o2": 14.3,
+       "flow_cm_s": 13.1,
+       "stretch_s": 61.8,
+       "curve_o2": 14.43,
+       "diff_o2": -0.13
+      },
+      {
+       "test": "O18",
+       "o2": 14.5,
+       "flow_cm_s": 13.1,
+       "stretch_s": 61.8,
+       "curve_o2": 14.43,
+       "diff_o2": 0.07
+      },
+      {
+       "test": "O22",
+       "o2": 14.9,
+       "flow_cm_s": 26.5,
+       "stretch_s": 88.5,
+       "curve_o2": 14.88,
+       "diff_o2": 0.02
+      }
+     ]
+    },
+    "held": {
+     "n": 2,
+     "consistent": 2,
+     "points": [
+      {
+       "test": "P17",
+       "o2": 16.5,
+       "flow_cm_s": 22.0,
+       "curve_o2": 15.14,
+       "consistent": true
+      },
+      {
+       "test": "P19",
+       "o2": 16.7,
+       "flow_cm_s": 33.7,
+       "curve_o2": 16.06,
+       "consistent": true
+      }
+     ]
+    },
+    "quench": {
+     "n": 25,
+     "on_curve": 20,
+     "inside_band": 20,
+     "off_curve": [
+      {
+       "test": "O4",
+       "o2": 13.6,
+       "geometry": null,
+       "why": "at the bottom of the curve"
+      },
+      {
+       "test": "P13b",
+       "o2": 20.2,
+       "geometry": "contra o vento",
+       "why": "above the curve value for still air"
+      },
+      {
+       "test": "P22a",
+       "o2": 20.8,
+       "geometry": "contra o vento",
+       "why": "above the curve value for still air"
+      },
+      {
+       "test": "P22b",
+       "o2": 20.0,
+       "geometry": "contra o vento",
+       "why": "above the curve value for still air"
+      },
+      {
+       "test": "P25",
+       "o2": 20.2,
+       "geometry": "contra o vento",
+       "why": "above the curve value for still air"
+      }
+     ],
+     "still_air_o2": 19.4,
+     "curve_flow_cm_s": [
+      0.03,
+      0.99
+     ],
+     "points": [
+      {
+       "test": "O4",
+       "o2": 13.6,
+       "geometry": null,
+       "curve_flow_cm_s": null,
+       "inside_band": false,
+       "off_curve": "at the bottom of the curve"
+      },
+      {
+       "test": "O6",
+       "o2": 16.0,
+       "geometry": null,
+       "curve_flow_cm_s": 0.36,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "O8a",
+       "o2": 15.3,
+       "geometry": null,
+       "curve_flow_cm_s": 0.5,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "O13a",
+       "o2": 14.6,
+       "geometry": "a favor do vento",
+       "curve_flow_cm_s": 0.99,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "O14",
+       "o2": 15.3,
+       "geometry": "a favor do vento",
+       "curve_flow_cm_s": 0.5,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "O15a",
+       "o2": 16.7,
+       "geometry": null,
+       "curve_flow_cm_s": 0.31,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "O15b",
+       "o2": 15.6,
+       "geometry": null,
+       "curve_flow_cm_s": 0.53,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "O19",
+       "o2": 14.6,
+       "geometry": "a favor do vento",
+       "curve_flow_cm_s": 0.7,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P1",
+       "o2": 17.5,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.16,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P3a",
+       "o2": 17.4,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.17,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P9",
+       "o2": 17.1,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.29,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P10",
+       "o2": 16.4,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.3,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P12",
+       "o2": 16.8,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.3,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P13b",
+       "o2": 20.2,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": null,
+       "inside_band": false,
+       "off_curve": "above the curve value for still air"
+      },
+      {
+       "test": "P14",
+       "o2": 18.0,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.11,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P16",
+       "o2": 17.4,
+       "geometry": "a favor do vento",
+       "curve_flow_cm_s": 0.17,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P17",
+       "o2": 16.5,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.28,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P18",
+       "o2": 19.0,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.03,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P19",
+       "o2": 16.7,
+       "geometry": "a favor do vento",
+       "curve_flow_cm_s": 0.26,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P20",
+       "o2": 18.2,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.1,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P22a",
+       "o2": 20.8,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": null,
+       "inside_band": false,
+       "off_curve": "above the curve value for still air"
+      },
+      {
+       "test": "P22b",
+       "o2": 20.0,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": null,
+       "inside_band": false,
+       "off_curve": "above the curve value for still air"
+      },
+      {
+       "test": "P23",
+       "o2": 17.0,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.27,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P24",
+       "o2": 17.5,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": 0.2,
+       "inside_band": true,
+       "off_curve": null
+      },
+      {
+       "test": "P25",
+       "o2": 20.2,
+       "geometry": "contra o vento",
+       "curve_flow_cm_s": null,
+       "inside_band": false,
+       "off_curve": "above the curve value for still air"
+      }
+     ]
+    },
+    "own_blowoff_line": {
+     "slope": 0.017,
+     "intercept": 13.66,
+     "slope_se": 0.0084,
+     "rms_o2": 0.51,
+     "n": 9,
+     "published": {
+      "slope": 0.0167,
+      "intercept": 13.4
+     }
+    }
+   },
+   "band_o2": 0.53,
+   "tested": {
+    "o2": [
+     13.6,
+     22.2
+    ],
+    "flow_cm_s_max": 55,
+    "flow_source": "NASA/TM-20210011385, p. 89: the duct produced airflows of 0 to 55 cm/s over the rods",
+    "pressure_atm": 1.0,
+    "gravity": 0.0
+   },
+   "buoyancy": {
+    "flow_1g_cm_s": [
+     20,
+     35
+    ],
+    "superposition": "linear, as in Fig. 6.22 of the report",
+    "sources": [
+     {
+      "value": 20,
+      "ref": "NASA/TM-20210011385, p. 89 (Ref. 32)",
+      "url": "https://ntrs.nasa.gov/citations/20210011385"
+     },
+     {
+      "value": 35,
+      "ref": "Solid Fuel Ignition Testing for Lunar Applications (Takahashi's estimate)",
+      "url": "https://ntrs.nasa.gov/citations/20250002114"
+     }
+    ],
+    "partial_gravity": "There is no measured value for the Moon or Mars; the lunar ignition report states that the flow speed in lunar gravity is not known.",
+    "earth_check": {
+     "o2": 15.4,
+     "flow_cm_s": 24,
+     "curve_o2": 15.29,
+     "ref": "NASA/TM-20210011385, p. 89: limit at 1 g of 15.4% O₂ with 20 cm/s of buoyant flow plus 4 cm/s forced"
+    }
+   }
+  }
+ ],
+ "tests": [
+  {
+   "test": "B1",
+   "pi": "Bhattacharjee",
+   "table_row": 2,
+   "sample": "147",
+   "material": "100 micron PMMA film 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "62",
+   "air_display": "5",
+   "found": true,
+   "as_run": "7",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 22.2,
+   "observation": "Ignited very quickly, turned flow off after spread halfway; flame extinguished very quickly; and sooty with blue leading edge",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the fan was turned off",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B2",
+   "pi": "Bhattacharjee",
+   "table_row": 3,
+   "sample": "155",
+   "material": "200 micron PMMA film 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "62",
+   "air_display": "5",
+   "found": true,
+   "as_run": "8",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": null,
+   "observation": "No stills taken, cable came loose; not quite a straight on edge view",
+   "ignited": null,
+   "end": "unknown",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "the report does not describe what happened",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": []
+  },
+  {
+   "test": "B3",
+   "pi": "Bhattacharjee",
+   "table_row": 4,
+   "sample": "148",
+   "material": "100 micron film 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "47",
+   "air_display": "2",
+   "found": true,
+   "as_run": "11",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 21.8,
+   "observation": "Probably 20.6 O2 to start; lower flow flames much more blue overall; still some soot though",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B4",
+   "pi": "Bhattacharjee",
+   "table_row": 5,
+   "sample": "159",
+   "material": "300 micron PMMA film 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "61",
+   "air_display": "5",
+   "found": true,
+   "as_run": "9",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 22.2,
+   "observation": "Bubble layer thickness increases with sample thickness",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The observation only mentions the bubble layer, which only exists while the sample is burning.",
+   "end_label": "burned; the report does not say how it ended",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B5",
+   "pi": "Bhattacharjee",
+   "table_row": 6,
+   "sample": "156",
+   "material": "200 micron 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "59",
+   "air_display": "5",
+   "found": true,
+   "as_run": "10",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 21.9,
+   "observation": "Repeat of B2 test conditions, to get top view images; question the 20.9 reading; all others were 20.6 this day",
+   "ignited": null,
+   "end": "unknown",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "the report does not describe what happened",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": []
+  },
+  {
+   "test": "B6",
+   "pi": "Bhattacharjee",
+   "table_row": 7,
+   "sample": "153m",
+   "material": "2 cm 0.1 mm PMMA film",
+   "restrictors": 2,
+   "fan_display": "0.9 1.3 2.75",
+   "air_display": "3 5 approaching 10",
+   "found": true,
+   "as_run": "57",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.9,
+   "observation": "Steady burning at 3 and 5 cm/s, did not reach 10 cm/s before end of sample, complete burnout, HCl ->0.3",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 3.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B7",
+   "pi": "Bhattacharjee",
+   "table_row": 8,
+   "sample": "161",
+   "material": "400 micron film 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "47",
+   "air_display": "2",
+   "found": true,
+   "as_run": "12",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 22.1,
+   "observation": "Very long bubble layer",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The observation only mentions the bubble layer, which only exists while the sample is burning.",
+   "end_label": "burned; the report does not say how it ended",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B8",
+   "pi": "Bhattacharjee",
+   "table_row": 9,
+   "sample": "157m",
+   "material": "2 cm 0.2 mm PMMA film",
+   "restrictors": 0,
+   "fan_display": "1.4 incr to 10.0",
+   "air_display": "10 max",
+   "found": true,
+   "as_run": "60",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.5,
+   "observation": "Spread at 10 cm/s, did not blowoff",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": true,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "vento_nao_apagou",
+     "o2": 20.5,
+     "flow_cm_s": 10.0,
+     "source": "highest speed in the Air display column"
+    }
+   ]
+  },
+  {
+   "test": "B9",
+   "pi": "Bhattacharjee",
+   "table_row": 10,
+   "sample": "154m",
+   "material": "2 cm 0.1 mm PMMA film",
+   "restrictors": 2,
+   "fan_display": "0.6 0.35",
+   "air_display": "2 <1",
+   "found": true,
+   "as_run": "58",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.9,
+   "observation": "Steady burning at 2 cm/s, extinguished at 0.35",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.35,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.35,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.1,
+    "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.9,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.9,
+      21.0
+     ],
+     "flow_range": [
+      0.0,
+      2.1
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B10",
+   "pi": "Bhattacharjee",
+   "table_row": 11,
+   "sample": "173m",
+   "material": "1 cm 0.2 mm PMMA film",
+   "restrictors": 2,
+   "fan_display": "1.7 (52) 1.25 0.9 0.6 0.4 0.35",
+   "air_display": "5 4 3 2 1",
+   "found": true,
+   "as_run": "62",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.8,
+   "observation": "Multiple velocities for steady spread, extinguished at pot 0.35",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.35,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.35,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.1,
+    "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.8,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.8,
+      21.0
+     ],
+     "flow_range": [
+      0.0,
+      2.1
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B11",
+   "pi": "Bhattacharjee",
+   "table_row": 12,
+   "sample": "158m",
+   "material": "2 cm 0.2 mm PMMA film",
+   "restrictors": 2,
+   "fan_display": "2.5 (59) 1.3 0.7 0.5 0.35",
+   "air_display": "5 3 1 <1",
+   "found": true,
+   "as_run": "61",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.7,
+   "observation": "Multiple velocities for steady spread, extinguished at pot 0.35",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.35,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.35,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.1,
+    "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.7,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.7,
+      21.0
+     ],
+     "flow_range": [
+      0.0,
+      2.1
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B12",
+   "pi": "Bhattacharjee",
+   "table_row": 13,
+   "sample": "160",
+   "material": "300 micron film 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "46.5",
+   "air_display": "2",
+   "found": true,
+   "as_run": "13",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 22.1,
+   "observation": "Mostly blue, soot only on bottom",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B13",
+   "pi": "Bhattacharjee",
+   "table_row": 14,
+   "sample": "162m",
+   "material": "2 cm 0.4 mm thick film",
+   "restrictors": 2,
+   "fan_display": "3.5 (68) 1.7 1.25 0.9 0.6 0.4 0.35",
+   "air_display": "10 5 4 3 2 1",
+   "found": true,
+   "as_run": "63",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.5,
+   "observation": "Multiple velocities for steady spread, extinguished at pot 0.35",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.35,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.35,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.1,
+    "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.5,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.35 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.5,
+      21.0
+     ],
+     "flow_range": [
+      0.0,
+      2.1
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B14",
+   "pi": "Bhattacharjee",
+   "table_row": 15,
+   "sample": "174m",
+   "material": "1 cm wide 200 micron thick PMMA",
+   "restrictors": 2,
+   "fan_display": "pot 0.9 0.5 and down",
+   "air_display": "5 3 2 ext",
+   "found": true,
+   "as_run": "47",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 15.0,
+   "o2_final": null,
+   "observation": "HCl O, only brief ignition, flame extinguished",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 15.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B15",
+   "pi": "Bhattacharjee",
+   "table_row": 16,
+   "sample": "149m",
+   "material": "2 cm 0.1 mm PMMA film",
+   "restrictors": 0,
+   "fan_display": "1.4 (50) incr to 10.0 pot",
+   "air_display": "10 max",
+   "found": true,
+   "as_run": "59",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.8,
+   "observation": "Spread at 10 cm/s, did not blowoff",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": true,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "vento_nao_apagou",
+     "o2": 20.8,
+     "flow_cm_s": 10.0,
+     "source": "highest speed in the Air display column"
+    }
+   ]
+  },
+  {
+   "test": "B16",
+   "pi": "Bhattacharjee",
+   "table_row": 17,
+   "sample": "150m",
+   "material": "2 cm 100 micron thick PMMA",
+   "restrictors": 2,
+   "fan_display": "44 (pot 0.68)",
+   "air_display": "3 0.5 pot 0.4 pot",
+   "found": true,
+   "as_run": "51",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 17.3,
+   "o2_final": 17.2,
+   "observation": "HCl 1.1 > 1.3; flame quenched after prolonged burn at 0.4 pot, one-sided flame; spread to top side and quenched immediately; did igniter wire affect top flame?",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.4,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.4,
+    "flow_cm_s": 0.8,
+    "flow_min": 0.0,
+    "flow_max": 2.4,
+    "source": "pot 0.4 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.3,
+     "flow_cm_s": 3.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.2,
+     "flow_cm_s": 0.8,
+     "source": "pot 0.4 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.2,
+      17.3
+     ],
+     "flow_range": [
+      0.0,
+      2.4
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B17",
+   "pi": "Bhattacharjee",
+   "table_row": 18,
+   "sample": "175m",
+   "material": "1 cm wide 200 micron thick PMMA",
+   "restrictors": 2,
+   "fan_display": "pot 1.2 (48) 0.9 0.4",
+   "air_display": "5 3 pot 0.4",
+   "found": true,
+   "as_run": "48",
+   "pdf_page": 111,
+   "report_page": 103,
+   "geometry": "contra o vento",
+   "o2_initial": 17.5,
+   "o2_final": 17.4,
+   "observation": "Burned steadily at higher flows, extinguished just as we reached a pot of 0.4; vapor jetting more on bottom, possibly because of sample tilted slightly to flow?",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.4,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.4,
+    "flow_cm_s": 0.8,
+    "flow_min": 0.0,
+    "flow_max": 2.4,
+    "source": "pot 0.4 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.5,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.4,
+     "flow_cm_s": 0.8,
+     "source": "pot 0.4 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.4,
+      17.5
+     ],
+     "flow_range": [
+      0.0,
+      2.4
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B18",
+   "pi": "Bhattacharjee",
+   "table_row": 19,
+   "sample": "176m",
+   "material": "1 cm wide 200 micron thick PMMA",
+   "restrictors": 0,
+   "fan_display": "pot 1.02 (47) incr to 7.0",
+   "air_display": "10 blowoff",
+   "found": true,
+   "as_run": "49",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 17.4,
+   "o2_final": 17.4,
+   "observation": "HCl 0.6 > 0.9, flame blew out at a fan pot of 7.0",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": 7.0,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 7.0,
+    "flow_cm_s": 40.8,
+    "flow_min": 27.7,
+    "flow_max": 44.0,
+    "source": "pot 7 with 0 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.4,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 17.4,
+     "flow_cm_s": 40.8,
+     "source": "pot 7 with 0 restrictor(s), converted with the fan calibration",
+     "flow_range": [
+      27.7,
+      44.0
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B19",
+   "pi": "Bhattacharjee",
+   "table_row": 20,
+   "sample": "151m",
+   "material": "2 cm 100 micron thick PMMA",
+   "restrictors": 0,
+   "fan_display": "47 (pot 1.05) incr to pot 6.0",
+   "air_display": "10 blowoff",
+   "found": true,
+   "as_run": "52",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 17.3,
+   "o2_final": 17.2,
+   "observation": "HCl 1.3 > 1.4; flame blew out at a pot of 6.0",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": 6.0,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 6.0,
+    "flow_cm_s": 36.2,
+    "flow_min": 24.0,
+    "flow_max": 38.7,
+    "source": "pot 6 with 0 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.3,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 17.2,
+     "flow_cm_s": 36.2,
+     "source": "pot 6 with 0 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.2,
+      17.3
+     ],
+     "flow_range": [
+      24.0,
+      38.7
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B20",
+   "pi": "Bhattacharjee",
+   "table_row": 21,
+   "sample": "152m",
+   "material": "2 cm 100 micron thick PMMA",
+   "restrictors": 2,
+   "fan_display": "48 pot 0.9 0.5",
+   "air_display": "5 3 pot 0.5",
+   "found": true,
+   "as_run": "50",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 17.4,
+   "o2_final": 17.4,
+   "observation": "HCl 0.9 > 1.1; flame burned entire sample",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "filme fino de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "B21",
+   "pi": "Bhattacharjee",
+   "table_row": 22,
+   "sample": "174m",
+   "material": "1 cm wide 200 micron thick PMMA",
+   "restrictors": 1,
+   "fan_display": "53 and down",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "121",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 20.8,
+   "o2_final": 20.6,
+   "observation": "Ignition at 5 cm/s then fan pot turned down slowly after flame; spreads halfway; flame goes out at 0.355 pot setting",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.355,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.355,
+    "flow_cm_s": 1.4,
+    "flow_min": 1.4,
+    "flow_max": 1.4,
+    "source": "pot 0.355 with 1 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.6,
+     "flow_cm_s": 1.4,
+     "source": "pot 0.355 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.6,
+      20.8
+     ],
+     "flow_range": [
+      1.4,
+      1.4
+     ]
+    }
+   ]
+  },
+  {
+   "test": "B22",
+   "pi": "Bhattacharjee",
+   "table_row": 23,
+   "sample": "176m",
+   "material": "1 cm wide 200 micron thick PMMA",
+   "restrictors": 1,
+   "fan_display": "53 42 41 40.5",
+   "air_display": "5 2 0",
+   "found": true,
+   "as_run": "126",
+   "pdf_page": 112,
+   "report_page": 104,
+   "geometry": "contra o vento",
+   "o2_initial": 20.7,
+   "o2_final": 20.5,
+   "observation": "Ignition at 5 cm/s then decreased flow in step, fan pot 1.7, 0.5, 0.4, 0.36 (flame out)",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.36,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "filme fino de acrílico",
+   "limit": {
+    "pot": 0.36,
+    "flow_cm_s": 1.4,
+    "flow_min": 1.4,
+    "flow_max": 1.4,
+    "source": "pot 0.36 with 1 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.5,
+     "flow_cm_s": 1.4,
+     "source": "pot 0.36 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.5,
+      20.7
+     ],
+     "flow_range": [
+      1.4,
+      1.4
+     ]
+    }
+   ]
+  },
+  {
+   "test": "F1",
+   "pi": "Ferkul",
+   "table_row": 24,
+   "sample": "227",
+   "material": "Nomex natural (nomex III)",
+   "restrictors": 2,
+   "fan_display": "82",
+   "air_display": "9.5",
+   "found": true,
+   "as_run": "14",
+   "pdf_page": 113,
+   "report_page": 105,
+   "geometry": "a favor do vento",
+   "o2_initial": 22.2,
+   "o2_final": 22.2,
+   "observation": "Ignited briefly but did not spread at all and extinguished while the igniter was still on",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido Nomex",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 22.2,
+     "flow_cm_s": 9.5,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "F2",
+   "pi": "Ferkul",
+   "table_row": 25,
+   "sample": "228m",
+   "material": "Nomex natural (nomex III)",
+   "restrictors": 2,
+   "fan_display": "92",
+   "air_display": "15",
+   "found": true,
+   "as_run": "103",
+   "pdf_page": 113,
+   "report_page": 105,
+   "geometry": "a favor do vento",
+   "o2_initial": 21.0,
+   "o2_final": 21.0,
+   "observation": "Tried to ignite, flame would not sustain",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido Nomex",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 21.0,
+     "flow_cm_s": 15.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "F3",
+   "pi": "Ferkul",
+   "table_row": 26,
+   "sample": "229m",
+   "material": "Nomex natural (nomex III)",
+   "restrictors": 1,
+   "fan_display": "61",
+   "air_display": "8",
+   "found": true,
+   "as_run": "115",
+   "pdf_page": 113,
+   "report_page": 105,
+   "geometry": "a favor do vento",
+   "o2_initial": 21.7,
+   "o2_final": null,
+   "observation": "Brief ignition flash, no sustained flame; no postburn sensor readings taken",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido Nomex",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 21.7,
+     "flow_cm_s": 8.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "F4",
+   "pi": "Ferkul",
+   "table_row": 27,
+   "sample": "39M",
+   "material": "Japan Wax candle",
+   "restrictors": 2,
+   "fan_display": "see notes",
+   "air_display": "3 ign",
+   "found": true,
+   "as_run": "36",
+   "pdf_page": 113,
+   "report_page": 105,
+   "geometry": null,
+   "o2_initial": 17.4,
+   "o2_final": 17.4,
+   "observation": "Long ignition, but blue flame established at 3 cm/s, reduced flow in increments: potentiometers 0.6, 0.4, 0.35, 0.32, 0.31, 0.305 flame extinguished",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.305,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "vela de cera",
+   "limit": {
+    "pot": 0.305,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.8,
+    "source": "pot 0.305 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.4,
+     "flow_cm_s": 3.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.4,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.305 with 2 restrictor(s), converted with the fan calibration",
+     "flow_range": [
+      0.0,
+      1.8
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M1",
+   "pi": "Miller",
+   "table_row": 28,
+   "sample": "222",
+   "material": "1 mm thick PMMA 1 sided 2 cm",
+   "restrictors": 2,
+   "fan_display": "58 54",
+   "air_display": "10 8",
+   "found": true,
+   "as_run": "15",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 21.9,
+   "observation": "Prolonged ignition, flame initially on both sides, after igniter off and flame moved away from end, bottom flame died and top flame became all blue and small; very slow propagation; changed flow from 10 to 8 cm/s and flame shrank to a circle; spread just over 1/3 of sample when we ran out of camera card, and put flame out by turning off flow",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the fan was turned off",
+   "form": "placa de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "M2",
+   "pi": "Miller",
+   "table_row": 29,
+   "sample": "224",
+   "material": "3 mm thick PMMA 1 sided 2 cm wide",
+   "restrictors": 0,
+   "fan_display": "116 (pot 9.3) 89 80 84",
+   "air_display": "20 15 13 14",
+   "found": true,
+   "as_run": "17",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 21.2,
+   "observation": "Ignite at 20 cm/s, turn down to 15 cm/s after spread away from igniter; seemed steady, so turned down to 13 cm/s; flame got very dim, so increased flow to 14 cm/s, but it self - extinguished",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 14,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "Went out on its own right after the air was raised from 13 to 14 cm/s; the rule did not tie the speed to the extinction.",
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 14,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 20.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 21.2,
+     "flow_cm_s": 14,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      21.2,
+      22.2
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M3",
+   "pi": "Miller",
+   "table_row": 30,
+   "sample": "226m",
+   "material": "2 cm wide 5 mm thick 1 sided PMMA",
+   "restrictors": 2,
+   "fan_display": "3.0 3.1 3.2 6.4 5.5 5.4",
+   "air_display": "10 20 18",
+   "found": true,
+   "as_run": "82",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 20.8,
+   "o2_final": 19.7,
+   "observation": "Extinguished at 18 cm/s; HCl 0.6 > 2.6",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 18.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 18.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.8,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 19.7,
+     "flow_cm_s": 18.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      19.7,
+      20.8
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M4",
+   "pi": "Miller",
+   "table_row": 31,
+   "sample": "171m",
+   "material": "5 mm thick PMMA 2 cm wide",
+   "restrictors": 1,
+   "fan_display": "52 47 43",
+   "air_display": "5 4 3",
+   "found": true,
+   "as_run": "113",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 21.8,
+   "o2_final": 19.8,
+   "observation": "Mild ignition at 10 cm/s; decreased flow down holding constant for 6 min at pot settings of 1.7, 1.0, and 0.55; finally extinguished by turning pot down to 0.3",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.3,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "pot": 0.3,
+    "flow_cm_s": 1.2,
+    "flow_min": 1.2,
+    "flow_max": 1.2,
+    "source": "pot 0.3 with 1 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 19.8,
+     "flow_cm_s": 1.2,
+     "source": "pot 0.3 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      19.8,
+      21.8
+     ],
+     "flow_range": [
+      1.2,
+      1.2
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M5",
+   "pi": "Miller",
+   "table_row": 32,
+   "sample": "167",
+   "material": "3 mm thick PMMA 2 sided 2 cm thick",
+   "restrictors": 0,
+   "fan_display": "",
+   "air_display": "20 13 10 8 5",
+   "found": true,
+   "as_run": "18",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 19.0,
+   "observation": "Rick ignited while we were loss of signal and out of contact with ISS, unfortunately; ignition was ~3 min per his verbal call down when we came back; flame already burning ~1/3 of sample, both sides, long and sooty; more vapor jetting on bottom due to molten ball attached there, visible when lights on to change camera card; turned down to 10 cm/s, then further down in increments to 5 cm/s; extinguished at 5 cm/s after prolonged flashing; during soot cleaning, Rick noticed damage to front door corner by the switches; He sent pictures down for us to evaluate for damage; CO reading posttest was off-scale; came back during purge reading 500",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 5.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 5.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 20.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 19.0,
+     "flow_cm_s": 5.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      19.0,
+      22.2
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M6",
+   "pi": "Miller",
+   "table_row": 33,
+   "sample": "163m",
+   "material": "1 mm thick PMMA 2 cm wide",
+   "restrictors": 1,
+   "fan_display": "68 52 47 43 42 41",
+   "air_display": "10 5 3 0",
+   "found": true,
+   "as_run": "111",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 21.8,
+   "o2_final": 20.7,
+   "observation": "Aggressive ignition led to large flame initially; once flame settled down, we kept flow low and had two flow plateaus (pot 0.4 and 0.36); when flame reached end of sample it started backing up and spreading along the edges.",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "placa de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.8,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "M7",
+   "pi": "Miller",
+   "table_row": 34,
+   "sample": "177m",
+   "material": "1 cm wide PMMA 1 mm thick",
+   "restrictors": 2,
+   "fan_display": "2.6 1.3 0.8 0.7 0.6 0.5; 60 49 45 44 43 42",
+   "air_display": "10 6 5 4.5 4 3",
+   "found": true,
+   "as_run": "81",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 18.9,
+   "o2_final": 18.4,
+   "observation": "18 min burn; burned entire sample; HCl 2.2 > 3.9",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "placa de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.9,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "M8",
+   "pi": "Miller",
+   "table_row": 35,
+   "sample": "178m",
+   "material": "1 cm wide PMMA 2 mm thick",
+   "restrictors": 2,
+   "fan_display": "3.3 1.6 1.0 decr",
+   "air_display": "10 5>7 5 decr",
+   "found": true,
+   "as_run": "79",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 19.1,
+   "o2_final": 18.2,
+   "observation": "25-min burn; turned down flow to extinguish, went out at pot 0.4; HCl 0.4 > 4.6",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.4,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "pot": 0.4,
+    "flow_cm_s": 0.8,
+    "flow_min": 0.0,
+    "flow_max": 2.4,
+    "source": "pot 0.4 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 19.1,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 18.2,
+     "flow_cm_s": 0.8,
+     "source": "pot 0.4 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      18.2,
+      19.1
+     ],
+     "flow_range": [
+      0.0,
+      2.4
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M9",
+   "pi": "Miller",
+   "table_row": 36,
+   "sample": "179m",
+   "material": "1 cm wide PMMA 3 mm thick",
+   "restrictors": 2,
+   "fan_display": "3.3 4.8;66 79",
+   "air_display": "10 14",
+   "found": true,
+   "as_run": "78",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 18.0,
+   "o2_final": 17.6,
+   "observation": "Ignited at 10 cm/s, photographs every 5 s or so, turned up flow when flame looked weak; died after 15 min at 14 cm/s; 17-min burn; HCl 0 > 1.7",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 14.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 14.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 17.6,
+     "flow_cm_s": 14.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      17.6,
+      18.0
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M10",
+   "pi": "Miller",
+   "table_row": 37,
+   "sample": "180m",
+   "material": "4 mm thick 1 cm wide PMMA slab",
+   "restrictors": 2,
+   "fan_display": "75 105 94/91 72/69 63/61 (4.4 8.0 6.6/6.3 4.0/3.7 3/0/2.7)",
+   "air_display": "10 17 14 10 8",
+   "found": true,
+   "as_run": "97",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 20.1,
+   "o2_final": 18.6,
+   "observation": "Long burn, quick ignition, flame in seconds, kept it on 40 s + 2nd on for another 10 to 15 s when it was shrinking; multiple flows for steady spreading; flame big at 17, so only left it there 3 min; other flows longer; flame self-extinguished at 8 cm/s after almost 10 min; Alex saw it going out and locked shutter for the last few seconds; pictures start after ignition, about every 8 s",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 8.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 8.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.1,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 18.6,
+     "flow_cm_s": 8.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      18.6,
+      20.1
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M11",
+   "pi": "Miller",
+   "table_row": 38,
+   "sample": "181m",
+   "material": "1 cm wide PMMA 5 mm thick",
+   "restrictors": 2,
+   "fan_display": "3.9 6.5 4.6 3.3 2.9 2.8; 62.5 93 77 66 63 62",
+   "air_display": "10 20 15 12",
+   "found": true,
+   "as_run": "80",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 20.0,
+   "o2_final": 18.5,
+   "observation": "29-min burn; extinguished at 12 cm/s., HCl 0.5 > 5.0",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 12.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 12.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 18.5,
+     "flow_cm_s": 12.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      18.5,
+      20.0
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M12",
+   "pi": "Miller",
+   "table_row": 39,
+   "sample": "165m",
+   "material": "2 mm thick PMMA 2 cm wide",
+   "restrictors": 1,
+   "fan_display": "41 42 41",
+   "air_display": "<1",
+   "found": true,
+   "as_run": "114",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 21.7,
+   "o2_final": 20.4,
+   "observation": "Vigorous ignition led to trying to get flame under control; finally had about plateaus at pot = 0.35, 0.4, and again 0.35",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "placa de acrílico",
+   "limit": null,
+   "points": []
+  },
+  {
+   "test": "M13",
+   "pi": "Miller",
+   "table_row": 40,
+   "sample": "169m",
+   "material": "4 mm thick PMMA 2 cm wide",
+   "restrictors": 1,
+   "fan_display": "52 47 43",
+   "air_display": "6 5 4",
+   "found": true,
+   "as_run": "112",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 20.8,
+   "o2_final": 19.0,
+   "observation": "Mild ignition at 10 cm/s; decreased flow down holding constant for 6 min at pot settings of 1.7, 1.0, and 0.55; finally extinguished by turning pot down to 0.3",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.3,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "pot": 0.3,
+    "flow_cm_s": 1.2,
+    "flow_min": 1.2,
+    "flow_max": 1.2,
+    "source": "pot 0.3 with 1 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.8,
+     "flow_cm_s": 6.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 19.0,
+     "flow_cm_s": 1.2,
+     "source": "pot 0.3 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      19.0,
+      20.8
+     ],
+     "flow_range": [
+      1.2,
+      1.2
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M14",
+   "pi": "Miller",
+   "table_row": 41,
+   "sample": "223",
+   "material": "2mm thick PMMA 1 sided 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "pot 2.4 1.87 (54)",
+   "air_display": "10 ~8",
+   "found": true,
+   "as_run": "16",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 22.2,
+   "o2_final": 21.6,
+   "observation": "Prolonged ignition, followed by flow reduction after flame moved away from igniter region and spread steadily; flame self-extinguished at an air reading of 9 cm/s.",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 9.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 9.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 21.6,
+     "flow_cm_s": 9.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      21.6,
+      22.2
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M15",
+   "pi": "Miller",
+   "table_row": 42,
+   "sample": "225m",
+   "material": "2 cm 4 mm 1 sided PMMA slab",
+   "restrictors": 2,
+   "fan_display": "ignited 10 adjusted down then up to 20 down in incrments to 15",
+   "air_display": "10 8 7 8 10 20 18 16 15",
+   "found": true,
+   "as_run": "64",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 21.0,
+   "o2_final": 20.0,
+   "observation": "Ignited and turned flow down to control flame size during end burning, then turned flow up to 20 cm/s and got steady spreading there, turned down flow to 15 and got spreading and slow extinction there.",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 15,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The air was reduced to 15 cm/s and the flame slowly went out at that speed.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 15,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 21.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.0,
+     "flow_cm_s": 15,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      20.0,
+      21.0
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M16",
+   "pi": "Miller",
+   "table_row": 43,
+   "sample": "164m",
+   "material": "1 mm thick PMMA 2 cm wide",
+   "restrictors": 2,
+   "fan_display": "73 57 59 48 45 43 75 (4.2 2.2 2.4 1.2 0.8 0.5 4.4)",
+   "air_display": "10 6 3 2 1 10",
+   "found": true,
+   "as_run": "99",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 19.2,
+   "o2_final": 18.7,
+   "observation": "Burned at decreasing flow down to 1 cm/s or so, still fine, at end of sample, turned up flow to 10 cm/s and flame got really long; turned it down but Alex reported some soot on the door and some on the heat sink; dry wipe would not wipe off; try Monday with some other-water?",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "placa de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 19.2,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "M17",
+   "pi": "Miller",
+   "table_row": 44,
+   "sample": "166m",
+   "material": "2 cm wide PMMA 2 mm thick",
+   "restrictors": 2,
+   "fan_display": "Fan pot 3.7 1.7 1.5 1.3 0.8 0.6 0.5 0.3ext",
+   "air_display": "10 5 3 0ext",
+   "found": true,
+   "as_run": "88",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 18.8,
+   "o2_final": 17.1,
+   "observation": "30-min burn targeted constant flows of 10, 5, and 3; finally turned fan pot to 0 to extinguish. HCl 0.3 > 3.7",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the fan was turned off",
+   "form": "placa de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.8,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "M18",
+   "pi": "Miller",
+   "table_row": 45,
+   "sample": "168m",
+   "material": "2 cm wide PMMA 3 mm thick",
+   "restrictors": 2,
+   "fan_display": "Fan pot 3.5 5 (brief) 3 5 2.2",
+   "air_display": "10 15 (brief) 10 8",
+   "found": true,
+   "as_run": "87",
+   "pdf_page": 116,
+   "report_page": 108,
+   "geometry": "contra o vento",
+   "o2_initial": 17.9,
+   "o2_final": 16.8,
+   "observation": "26-min burn; flow briefly at 15 cm/s but flame was too strong so turned down; HCl 0 > 3.1, extinguished 8 cm/s",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 8,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The observation ends with 'extinguished 8 cm/s', after the air was reduced from 10 to 8.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 8,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.9,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.8,
+     "flow_cm_s": 8,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      16.8,
+      17.9
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M19",
+   "pi": "Miller",
+   "table_row": 46,
+   "sample": "170m",
+   "material": "4 mm thick 2 cm 2ide PMMA slab",
+   "restrictors": 2,
+   "fan_display": "75 105 94 75 77 79 59 61 57 55 53 (4.4 8.0 6.6 4.4 4.6 4.8 2.5 2.7 2.2 2.0 1.8)",
+   "air_display": "10 17 14 10 7 5",
+   "found": true,
+   "as_run": "98",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 19.0,
+   "o2_final": 17.4,
+   "observation": "Burned with decreasing flows until it went out on its own at 5 cm/s",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 5.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 5.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 19.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 17.4,
+     "flow_cm_s": 5.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      17.4,
+      19.0
+     ]
+    }
+   ]
+  },
+  {
+   "test": "M20",
+   "pi": "Miller",
+   "table_row": 47,
+   "sample": "172m",
+   "material": "5 mm thick PMMA 2 cm wide",
+   "restrictors": 1,
+   "fan_display": "67 58",
+   "air_display": "10 8",
+   "found": true,
+   "as_run": "116",
+   "pdf_page": 117,
+   "report_page": 109,
+   "geometry": "contra o vento",
+   "o2_initial": 18.0,
+   "o2_final": 17.4,
+   "observation": "Flame took some time to establish, initially only on bottom of fuel; ignition at 10 cm/s (left 8 min) then flow down to 8 cm/s (flame out after 3 more minutes)",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 8,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The air was lowered to 8 cm/s and the flame went out three minutes later.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "placa de acrílico",
+   "limit": {
+    "flow_cm_s": 8,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.0,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.4,
+     "flow_cm_s": 8,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      17.4,
+      18.0
+     ]
+    }
+   ]
+  },
+  {
+   "test": "O1",
+   "pi": "Olson",
+   "table_row": 48,
+   "sample": "207",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "89 62 50 41",
+   "air_display": "20 10 5 2 1",
+   "found": true,
+   "as_run": "5",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 22.2,
+   "o2_final": 21.7,
+   "observation": "Bracket test with decreasing flows; very sooty long flame at high flows; rod very thinned out and was wobbling due to vapor jetting later in test; Rick broke it off holder during readjustments",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 22.2,
+     "flow_cm_s": 20.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 94.4
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O2",
+   "pi": "Olson",
+   "table_row": 49,
+   "sample": "204",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": ".54 pot 0.45 pot",
+   "air_display": "0",
+   "found": true,
+   "as_run": "6",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 22.2,
+   "o2_final": 21.9,
+   "observation": "Ignited at 2 cm/s, and got dim flame that got sooty with lots of vapor jetting, reduced flow to 1.5 pot and got less vapor jetting test; still sooty at these low flows",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O3a",
+   "pi": "Olson",
+   "table_row": 50,
+   "sample": "205M",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 3",
+   "found": true,
+   "as_run": "23",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": "a favor do vento",
+   "o2_initial": 18.0,
+   "o2_final": 18.0,
+   "observation": "Flame extinguished as soon as he turned flow down, probably overshot, flame sooty at 5 cm/s",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O3b",
+   "pi": "Olson",
+   "table_row": 51,
+   "sample": "205M",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 3 2 1 low",
+   "found": true,
+   "as_run": "24",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": "a favor do vento",
+   "o2_initial": 18.0,
+   "o2_final": 17.7,
+   "observation": "Flame sooty even at lower flows, didn't get blue until air reading was zero",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O4",
+   "pi": "Olson",
+   "table_row": 52,
+   "sample": "216m",
+   "material": "3/8\"clear rod",
+   "restrictors": 2,
+   "fan_display": "5 0.7 0.5 0.4 0.36 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "66",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": null,
+   "o2_initial": 14.8,
+   "o2_final": 13.6,
+   "observation": "Larger rod, decreased flow, extinguished at 0.36, HCl 9.7",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.36,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.36,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.2,
+    "source": "pot 0.36 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 14.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 13.6,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.36 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      13.6,
+      14.8
+     ],
+     "flow_range": [
+      0.0,
+      2.2
+     ],
+     "stretch_s": 2.7
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "O5a",
+   "pi": "Olson",
+   "table_row": 53,
+   "sample": "220m",
+   "material": "1/2\" clear PMMA rod",
+   "restrictors": 2,
+   "fan_display": "1.3 2.7 1.3 0.7 0.45. 4.0",
+   "air_display": "5 10 5 2 0 (49 62 49 44 42)",
+   "found": true,
+   "as_run": "89",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": "a favor do vento",
+   "o2_initial": 15.1,
+   "o2_final": 14.2,
+   "observation": "Hard to ignite, broke two igniters, burned for 9 min then blew out with pot of 4.0, tried to stay lit but blew off after multiple oscillations.",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": 4.0,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 4.0,
+    "flow_cm_s": 13.1,
+    "flow_min": 8.2,
+    "flow_max": 15.1,
+    "source": "pot 4 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.1,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 14.2,
+     "flow_cm_s": 13.1,
+     "source": "pot 4 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.2,
+      15.1
+     ],
+     "flow_range": [
+      8.2,
+      15.1
+     ],
+     "stretch_s": 43.7
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "O5b",
+   "pi": "Olson",
+   "table_row": 54,
+   "sample": "220m",
+   "material": "1/2\" clear PMMA rod",
+   "restrictors": 2,
+   "fan_display": "1.3",
+   "air_display": "49 5 cm/s",
+   "found": true,
+   "as_run": "90",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": "a favor do vento",
+   "o2_initial": 14.2,
+   "o2_final": 14.1,
+   "observation": "Would not sustain a flame without igniter on, broke igniter again",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 14.2,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "O6",
+   "pi": "Olson",
+   "table_row": 55,
+   "sample": "206M",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "5 .36 .32 .31 .305 out .275",
+   "air_display": "see fan",
+   "found": true,
+   "as_run": "37",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": null,
+   "o2_initial": 16.7,
+   "o2_final": 16.0,
+   "observation": null,
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.275,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The observation column is empty; the end comes from the fan column: '0.305, out 0.275'.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.275,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.7,
+    "source": "pot 0.275 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.0,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.275 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.0,
+      16.7
+     ],
+     "flow_range": [
+      0.0,
+      1.7
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O7",
+   "pi": "Olson",
+   "table_row": 56,
+   "sample": "214m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "5 .36 .32 ..305 blowoff fan max 10",
+   "air_display": "",
+   "found": true,
+   "as_run": "38",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": null,
+   "o2_initial": 16.0,
+   "o2_final": 15.5,
+   "observation": "Blowoff fan 97, HCl post 4.9",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": null,
+   "fan": 97.0,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "fan display 97 converted to pot 7.03"
+   ],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 7.03,
+    "flow_cm_s": 23.8,
+    "flow_min": 14.8,
+    "flow_max": 26.3,
+    "source": "pot 7.03 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "apagou_vento",
+     "o2": 15.5,
+     "flow_cm_s": 23.8,
+     "source": "pot 7.03 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      15.5,
+      16.0
+     ],
+     "flow_range": [
+      14.8,
+      26.3
+     ],
+     "stretch_s": 112.4
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O8a",
+   "pi": "Olson",
+   "table_row": 57,
+   "sample": "208m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "5 .36 .32 .31 extinguished",
+   "air_display": "",
+   "found": true,
+   "as_run": "39",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": null,
+   "o2_initial": 15.7,
+   "o2_final": 15.3,
+   "observation": "Quench at pot 0.31, HCL 4.8 to 5.9",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.31,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.31,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 15.3,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      15.3,
+      15.7
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O8b",
+   "pi": "Olson",
+   "table_row": 58,
+   "sample": "208m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "5 .36 .32 .31 blowoff fan pot 6.0",
+   "air_display": "",
+   "found": true,
+   "as_run": "40",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": null,
+   "o2_initial": 15.5,
+   "o2_final": 15.2,
+   "observation": "Blowoff fan 78, HCl prepost 5.9 to 7.9",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": null,
+   "fan": 78.0,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "fan display 78 converted to pot 4.73"
+   ],
+   "flags": [
+    "the fan column records the extinction at pot 6 and the observation gives fan display 78, which corresponds to pot 4.73; the speed range covers both"
+   ],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 4.73,
+    "flow_cm_s": 15.7,
+    "flow_min": 9.6,
+    "flow_max": 22.1,
+    "source": "pot 4.73 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "apagou_vento",
+     "o2": 15.2,
+     "flow_cm_s": 15.7,
+     "source": "pot 4.73 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      15.2,
+      15.5
+     ],
+     "flow_range": [
+      9.6,
+      22.1
+     ],
+     "stretch_s": 74.1
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O9",
+   "pi": "Olson",
+   "table_row": 59,
+   "sample": "209m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "5 .36 .32 blowoff pt 4.0",
+   "air_display": "",
+   "found": true,
+   "as_run": "41",
+   "pdf_page": 119,
+   "report_page": 111,
+   "geometry": null,
+   "o2_initial": 15.0,
+   "o2_final": 14.8,
+   "observation": "Blowoff fan 68, HCl 7.5 to 9.3",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": null,
+   "fan": 68.0,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "fan display 68 converted to pot 3.53"
+   ],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 3.53,
+    "flow_cm_s": 11.7,
+    "flow_min": 7.4,
+    "flow_max": 13.4,
+    "source": "pot 3.53 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "apagou_vento",
+     "o2": 14.8,
+     "flow_cm_s": 11.7,
+     "source": "pot 3.53 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.8,
+      15.0
+     ],
+     "flow_range": [
+      7.4,
+      13.4
+     ],
+     "stretch_s": 55.2
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O10",
+   "pi": "Olson",
+   "table_row": 60,
+   "sample": "210m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "49 44 41 122 (1.3 0.7 0.4 0.36 0.32 10)",
+   "air_display": "5 2 0 max",
+   "found": true,
+   "as_run": "95",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.7,
+   "o2_final": 16.1,
+   "observation": "Leading edge (LE) blew out at fan 81, 25 s for rest of flame to blowoff at maximum flow",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": null,
+   "fan": 81.0,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "fan display 81 converted to pot 5.09"
+   ],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 5.09,
+    "flow_cm_s": 16.9,
+    "flow_min": 10.3,
+    "flow_max": 18.9,
+    "source": "pot 5.09 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 16.1,
+     "flow_cm_s": 16.9,
+     "source": "pot 5.09 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.1,
+      16.7
+     ],
+     "flow_range": [
+      10.3,
+      18.9
+     ],
+     "stretch_s": 79.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O11",
+   "pi": "Olson",
+   "table_row": 61,
+   "sample": "184m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "ign 5 0.36 0.32 0.31 0.305 blowoff 6.0",
+   "air_display": "5 down then blowoff",
+   "found": true,
+   "as_run": "65",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 15.4,
+   "o2_final": 14.8,
+   "observation": "Repeat of clear rod O8b test, to compare black versus clear for stagnation flame, blowoff at pot of 6.0, fan slightly higher than O8b, HCl 2.8",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": 6.0,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 6.0,
+    "flow_cm_s": 20.1,
+    "flow_min": 12.2,
+    "flow_max": 22.1,
+    "source": "pot 6 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 14.8,
+     "flow_cm_s": 20.1,
+     "source": "pot 6 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.8,
+      15.4
+     ],
+     "flow_range": [
+      12.2,
+      22.1
+     ],
+     "stretch_s": 94.9
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O12",
+   "pi": "Olson",
+   "table_row": 62,
+   "sample": "217m",
+   "material": "3/8\" clear rod",
+   "restrictors": 2,
+   "fan_display": "pots 1.4 3 0.9 0.7",
+   "air_display": "no ign at any flow",
+   "found": true,
+   "as_run": "67",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 13.6,
+   "o2_final": 13.5,
+   "observation": "No sustained flame at any flow, flame with igniter but died immediately upon igniter removal, HCL 12.3",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "O13a",
+   "pi": "Olson",
+   "table_row": 63,
+   "sample": "221m",
+   "material": "1/2\" clear PMMA rod",
+   "restrictors": 2,
+   "fan_display": "1.3 0.7 0.45 0.36 0.32 0.31",
+   "air_display": "49 44 42 41 41 40.5 (5 2 0)",
+   "found": true,
+   "as_run": "91",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": "a favor do vento",
+   "o2_initial": 15.9,
+   "o2_final": 14.6,
+   "observation": "Ignited and burned at 5 pot settings, flame self-extinguished after 3+ min at pot 0.31",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.31,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.31,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.9,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 14.6,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.6,
+      15.9
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.0
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "O13b",
+   "pi": "Olson",
+   "table_row": 64,
+   "sample": "221m",
+   "material": "1/2\" clear PMMA rod",
+   "restrictors": 2,
+   "fan_display": "1.3 0.9",
+   "air_display": "7 4? (49 ?)",
+   "found": true,
+   "as_run": "92",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": "a favor do vento",
+   "o2_initial": 14.6,
+   "o2_final": 14.4,
+   "observation": "Only stayed lit at 0.9 for less than a minute",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 14.6,
+     "flow_cm_s": 7.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.4
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "O14",
+   "pi": "Olson",
+   "table_row": 65,
+   "sample": "183m",
+   "material": "1/4\" black rod",
+   "restrictors": 1,
+   "fan_display": "52 and down",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "117",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.3,
+   "o2_final": 15.3,
+   "observation": "Ignition at 5 cm/s then slow pot decreases to quenching pot 0.28",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.28,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.28,
+    "flow_cm_s": 1.1,
+    "flow_min": 1.1,
+    "flow_max": 1.1,
+    "source": "pot 0.28 with 1 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.3,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 15.3,
+     "flow_cm_s": 1.1,
+     "source": "pot 0.28 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      15.3,
+      16.3
+     ],
+     "flow_range": [
+      1.1,
+      1.1
+     ],
+     "stretch_s": 5.2
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O15a",
+   "pi": "Olson",
+   "table_row": 66,
+   "sample": "218m",
+   "material": "3/8\" clear rod",
+   "restrictors": 2,
+   "fan_display": "57.5 47 42 41 (2.3 1.0 0.5 0.35 0.32)",
+   "air_display": "5 0",
+   "found": true,
+   "as_run": "100",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 17.1,
+   "o2_final": 16.7,
+   "observation": "Decrease flow to extinction at 0.32 pot, from 0.35 pot. 1.5 min at 5 cm/s; 2.5 min pot 1.0; 3.5 min at 0.5; 3.5 min 0.35; slow turn down to 0.32, flame out fairly quickly",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.32,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.32,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.1,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.7,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.7,
+      17.1
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "O15b",
+   "pi": "Olson",
+   "table_row": 67,
+   "sample": "218m",
+   "material": "3/8\" clear rod",
+   "restrictors": 2,
+   "fan_display": "57.5 42 41 40 (2.3 0.5 0.35 0.34 0.33 0.32 0.31 0.30 0.29 0.28 0.27)",
+   "air_display": "5 0",
+   "found": true,
+   "as_run": "101",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 16.7,
+   "o2_final": 15.6,
+   "observation": "Reburn of same rod as previous; decreased flow to extinction at 0.27 pot, much lower than previous; rod heatup effect? 1 min 5 cm/s; 3.5 min pot 0.5; 5 min 0.35; 4 min 0.34; 4 min 0.33; 3 min 0.32; 1 min 0.31; 1 min 0.3; 1 min 0.29; 1.5 min 0.28; 0.27 out",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.27,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.27,
+    "flow_cm_s": 0.5,
+    "flow_min": 0.0,
+    "flow_max": 1.6,
+    "source": "pot 0.27 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 15.6,
+     "flow_cm_s": 0.5,
+     "source": "pot 0.27 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      15.6,
+      16.7
+     ],
+     "flow_range": [
+      0.0,
+      1.6
+     ],
+     "stretch_s": 1.9
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "O16",
+   "pi": "Olson",
+   "table_row": 68,
+   "sample": "219m",
+   "material": "3/8\"clear rod",
+   "restrictors": 2,
+   "fan_display": "60 (2.6)",
+   "air_display": "5",
+   "found": true,
+   "as_run": "106",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 14.5,
+   "o2_final": 14.5,
+   "observation": "Brief flame at end of first ignition, but no joy on sustained flame",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 14.5,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "O17",
+   "pi": "Olson",
+   "table_row": 69,
+   "sample": "211m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "49 46.5 44 42 41 72 decr (1.3 1.0 0.7 0.5 0.4 4.0 decr )",
+   "air_display": "3 0 11",
+   "found": true,
+   "as_run": "96",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": "a favor do vento",
+   "o2_initial": 15.1,
+   "o2_final": 14.3,
+   "observation": "Stable burns at slightly higher flows, LE blowoff at fan 72 and turned down flow but flame did not recover and extinguished even after flow was down to 43-44",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": null,
+   "fan": 72.0,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "fan display 72 converted to pot 4"
+   ],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 4.0,
+    "flow_cm_s": 13.1,
+    "flow_min": 8.2,
+    "flow_max": 15.1,
+    "source": "pot 4 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.1,
+     "flow_cm_s": 3.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 14.2
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 14.3,
+     "flow_cm_s": 13.1,
+     "source": "pot 4 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.3,
+      15.1
+     ],
+     "flow_range": [
+      8.2,
+      15.1
+     ],
+     "stretch_s": 61.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O18",
+   "pi": "Olson",
+   "table_row": 70,
+   "sample": "212m",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "57 51 47 72 51 72 51 47 (2.3 1.5 1.0 4.0 1.5 4.0 1.5 1.0)",
+   "air_display": "5 2 0 11 2 11 2 0",
+   "found": true,
+   "as_run": "102",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": null,
+   "o2_initial": 15.2,
+   "o2_final": 14.5,
+   "observation": "Got rod hot, blue flame, turned flow up to pot 4.0, stag region blew out, Alex turned down quickly to 1.5 and got it to restabilize; we repeated it but it would not restabilize second time and flame extinguished after multiple oscillations at pot 1.0, after 1.5 would not restabilize",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": 4.0,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "blown out by strong airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 4.0,
+    "flow_cm_s": 13.1,
+    "flow_min": 8.2,
+    "flow_max": 15.1,
+    "source": "pot 4 with 2 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.2,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 14.5,
+     "flow_cm_s": 13.1,
+     "source": "pot 4 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.5,
+      15.2
+     ],
+     "flow_range": [
+      8.2,
+      15.1
+     ],
+     "stretch_s": 61.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O19",
+   "pi": "Olson",
+   "table_row": 71,
+   "sample": "213m",
+   "material": "1/4\" clear rod",
+   "restrictors": 1,
+   "fan_display": "52 and down",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "118",
+   "pdf_page": 118,
+   "report_page": 110,
+   "geometry": "a favor do vento",
+   "o2_initial": 15.3,
+   "o2_final": 14.6,
+   "observation": "Ignition at 5 cm/s then slow pot decreases to quenching pot 0.288",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.288,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.288,
+    "flow_cm_s": 1.2,
+    "flow_min": 1.2,
+    "flow_max": 1.2,
+    "source": "pot 0.288 with 1 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.3,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 14.6,
+     "flow_cm_s": 1.2,
+     "source": "pot 0.288 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      14.6,
+      15.3
+     ],
+     "flow_range": [
+      1.2,
+      1.2
+     ],
+     "stretch_s": 5.7
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O20",
+   "pi": "Olson",
+   "table_row": 72,
+   "sample": "204m",
+   "material": "1/4\" clear rod",
+   "restrictors": 0,
+   "fan_display": "49 (1.3 pot) pots 7 8 9 10",
+   "air_display": "5 8 incr to max 38.5",
+   "found": false,
+   "observation": null,
+   "end": "unknown",
+   "end_label": "the report does not describe what happened",
+   "ignited": null,
+   "blowoff_failed": false,
+   "o2_initial": 16.5,
+   "o2_final": 15.9,
+   "points": [],
+   "flags": [
+    "row not found in the report"
+   ],
+   "form": "bastão de acrílico",
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "O21",
+   "pi": "Olson",
+   "table_row": 73,
+   "sample": "219m",
+   "material": "3/8\" clear rod",
+   "restrictors": 0,
+   "fan_display": "46 (pot 0.8) pot 7 10",
+   "air_display": "incr to 28",
+   "found": false,
+   "observation": null,
+   "end": "unknown",
+   "end_label": "the report does not describe what happened",
+   "ignited": null,
+   "blowoff_failed": false,
+   "o2_initial": 15.9,
+   "o2_final": 15.4,
+   "points": [],
+   "flags": [
+    "row not found in the report"
+   ],
+   "form": "bastão de acrílico",
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "O22",
+   "pi": "Olson",
+   "table_row": 74,
+   "sample": "220m",
+   "material": "1/2\" clear rod",
+   "restrictors": 0,
+   "fan_display": "49 (pot 1.1) blowoff pot 5 out at fan 87",
+   "air_display": "4 incr to 26.5",
+   "found": false,
+   "observation": null,
+   "end": "blowoff",
+   "end_label": "blown out by strong airflow",
+   "ignited": true,
+   "blowoff_failed": false,
+   "o2_initial": 15.4,
+   "o2_final": 14.9,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 15.4,
+     "flow_cm_s": 4.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 13.4
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 14.9,
+     "flow_cm_s": 26.5,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      14.9,
+      15.4
+     ],
+     "stretch_s": 88.5
+    }
+   ],
+   "flags": [
+    "row not found in the report"
+   ],
+   "air": 26.5,
+   "reviewed": "Test missing from the report. The PSI table has 'blowoff pot 5, out at fan 87' and air rising to 26.5 cm/s.",
+   "form": "bastão de acrílico",
+   "basis": [],
+   "limit": {
+    "flow_cm_s": 26.5,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "P1",
+   "pi": "Fernandez-Pello",
+   "table_row": 75,
+   "sample": "185M",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 2 slow decr to ext",
+   "found": true,
+   "as_run": "25",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 17.7,
+   "o2_final": 17.5,
+   "observation": "Broke -20, -21 igniters, -22 worked; nice flame, got down to extinction at pot 0.315 (finite low flow), very slow increments",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.315,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.315,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.315 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.5,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.315 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.5,
+      17.7
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P2",
+   "pi": "Fernandez-Pello",
+   "table_row": 76,
+   "sample": "188M",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 2.5 2 (pot .9 .5 .35. .33)",
+   "found": true,
+   "as_run": "26",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 17.4,
+   "o2_final": 17.2,
+   "observation": "Nice stable burn at low velocity, mostly blue with some inner soot at higher flow, stable flame at pot 0.33, did not get extinction on stills, but was just fan off, not slow ramp",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "burn_pot": 0.33,
+   "reviewed": "Steady flame at pot 0.33 before the fan was turned off.",
+   "end_label": "burned until the fan was turned off",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "queimou",
+     "o2": 17.2,
+     "flow_cm_s": 0.7,
+     "flow_range": [
+      0.0,
+      2.0
+     ],
+     "source": "steady flame at pot 0.33 with 2 restrictor(s)",
+     "stretch_s": 3.3
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P3a",
+   "pi": "Fernandez-Pello",
+   "table_row": 77,
+   "sample": "215M",
+   "material": "1/4\" clear rod",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 2.5 (1.15 .5 .35 .33. .32 .315 .31 .3)",
+   "found": true,
+   "as_run": "27",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 17.7,
+   "o2_final": 17.4,
+   "observation": "Repeat of last test with clear rod; extinguished at 0.3 pot very small flame, but steady spread",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.3,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.3,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.8,
+    "source": "pot 0.3 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.4,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.3 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.4,
+      17.7
+     ],
+     "flow_range": [
+      0.0,
+      1.8
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P3b",
+   "pi": "Fernandez-Pello",
+   "table_row": 78,
+   "sample": "215M",
+   "material": "1/4 clear rod",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 very low (0.85 0.32 0.31 0.305 0.30 0.295)",
+   "found": true,
+   "as_run": "28",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 17.4,
+   "o2_final": 16.8,
+   "observation": "Very low velocity test to get limiting spread rate, pot 0.32 spread, 0.31 spread, etc.; power failed to camera?; fan still running; camera power cable needed repair and taping to camera body to make it work",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P4",
+   "pi": "Fernandez-Pello",
+   "table_row": 79,
+   "sample": "197m",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "48 41",
+   "air_display": "5 pots 0.4 0.36 0.32 0.308 .3 off",
+   "found": true,
+   "as_run": "54",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 18.5,
+   "o2_final": 17.1,
+   "observation": "HCl 0.9 > 1.8, long slow burn, steady at multiple pots until turned off flow",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "burn_pot": 0.3,
+   "reviewed": "Steady flame at several settings; the last one before the air was turned off was pot 0.3 (Air display column).",
+   "end_label": "burned until the fan was turned off",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.5,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "queimou",
+     "o2": 17.1,
+     "flow_cm_s": 0.6,
+     "flow_range": [
+      0.0,
+      1.8
+     ],
+     "source": "steady flame at pot 0.3 with 2 restrictor(s)",
+     "stretch_s": 2.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P5",
+   "pi": "Fernandez-Pello",
+   "table_row": 80,
+   "sample": "202m",
+   "material": "0.5\" black rod",
+   "restrictors": 2,
+   "fan_display": "Fan pot 1.5 (5cm/s) 0.9 0.4 0.36 0.32 0.308 0.3 0.29 0.28 0 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "83",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 19.3,
+   "o2_final": 17.6,
+   "observation": "Fan pot 1.5 (5 cm/s), 0.9, 0.4, 0.36, 0.32, 0.308, 0.3, 0.29, 0.28 (flame persisted for all) finally turned down flow to 0 to extinguish; HCL 0 > 4.7; lots of fuel left behind, conical shape",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "burn_pot": 0.28,
+   "reviewed": "The flame persisted at every setting down to pot 0.28; it only went out with the air at zero.",
+   "end_label": "burned until the fan was turned off",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 19.3,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    },
+    {
+     "state": "queimou",
+     "o2": 17.6,
+     "flow_cm_s": 0.6,
+     "flow_range": [
+      0.0,
+      1.7
+     ],
+     "source": "steady flame at pot 0.28 with 2 restrictor(s)",
+     "stretch_s": 2.0
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "P6",
+   "pi": "Fernandez-Pello",
+   "table_row": 81,
+   "sample": "186m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "48 41",
+   "air_display": "5 pots 0.4 0.36 0.32 0.31 off",
+   "found": true,
+   "as_run": "53",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 18.9,
+   "o2_final": 18.5,
+   "observation": "HCl 0 > 0.9, steady burning until turned flow off, multiple pot settings",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "burn_pot": 0.31,
+   "reviewed": "Steady burning until the air was turned off; the last setting was pot 0.31 (Air display column).",
+   "end_label": "burned until the fan was turned off",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.9,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "queimou",
+     "o2": 18.5,
+     "flow_cm_s": 0.6,
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "source": "steady flame at pot 0.31 with 2 restrictor(s)",
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P8",
+   "pi": "Fernandez-Pello",
+   "table_row": 82,
+   "sample": "197m",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "48 62 75",
+   "air_display": "5 would not stay lit 10 15 ibid",
+   "found": true,
+   "as_run": "56",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 16.4,
+   "o2_final": 16.3,
+   "observation": "HCl 0.9 > 0.9, would not stay lit, tip of sample was flat",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 16.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P9",
+   "pi": "Fernandez-Pello",
+   "table_row": 83,
+   "sample": "202m",
+   "material": "0.5\" black rod",
+   "restrictors": 2,
+   "fan_display": "Fan pot 1.5 (5cm/s) 0.9 0.4 0.36 0.32 0.3 0.28 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "84",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 17.6,
+   "o2_final": 17.1,
+   "observation": "Fan pot 1.5 (5 cm/s), 0.9, 0.4, 0.36, 0.32, 0.3, 0.28 flame out at 0.28; HCL 4.7 > 4.5; flame did not leave conical portion behind, rather fuel was consumed but final sample shape was very irregular",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.28,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.28,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.7,
+    "source": "pot 0.28 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.6,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.1,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.28 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.1,
+      17.6
+     ],
+     "flow_range": [
+      0.0,
+      1.7
+     ],
+     "stretch_s": 2.0
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "P10",
+   "pi": "Fernandez-Pello",
+   "table_row": 84,
+   "sample": "187m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "48 41",
+   "air_display": "5 pots 0.4 0.36 0.32 0.31 0.30 extinguished",
+   "found": true,
+   "as_run": "55",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 17.0,
+   "o2_final": 16.4,
+   "observation": "HCl 0.3 > 0.9, steady burn at multiple velocities, finite quench at pot 0.3",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.3,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.3,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.8,
+    "source": "pot 0.3 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.4,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.3 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.4,
+      17.0
+     ],
+     "flow_range": [
+      0.0,
+      1.8
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P12",
+   "pi": "Fernandez-Pello",
+   "table_row": 85,
+   "sample": "199m",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "60 52 48 44.5 42 41.5 41 (2.6 1.6 1.2 .75 .5 .4 .36 0.34)",
+   "air_display": "5 3 2 1 0.5 lower",
+   "found": true,
+   "as_run": "104",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 17.5,
+   "o2_final": 16.8,
+   "observation": "Loss of signal before extinguished, oscillating at 0.36, out immediately at 0.34, multiple steady spread flows",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.34,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "Oscillated at pot 0.36 and went out at 0.34; the rule had picked 0.36.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.34,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.1,
+    "source": "pot 0.34 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.5,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.8,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.34 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.8,
+      17.5
+     ],
+     "flow_range": [
+      0.0,
+      2.1
+     ],
+     "stretch_s": 2.7
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P13a",
+   "pi": "Fernandez-Pello",
+   "table_row": 86,
+   "sample": "203m",
+   "material": "0.5\" black rod",
+   "restrictors": 2,
+   "fan_display": "Fan pot 1.1 (5cm/s) 0.4 0.36 0.32 0.3 0.28 0.26 0 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "85",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 20.7,
+   "o2_final": 19.1,
+   "observation": "Fan pot 1.1 (5 cm/s), 0.4, 0.36, 0.32, 0.3, 0.28, 0.26; flame out when pot turned to 0; HCL 0.5 > 4.1; flame reached front of sample and began to wrap around",
+   "ignited": true,
+   "end": "fan_off",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "burn_pot": 0.26,
+   "reviewed": "Steady flame down to pot 0.26; it only went out when the pot went to zero.",
+   "end_label": "burned until the fan was turned off",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    },
+    {
+     "state": "queimou",
+     "o2": 19.1,
+     "flow_cm_s": 0.5,
+     "flow_range": [
+      0.0,
+      1.6
+     ],
+     "source": "steady flame at pot 0.26 with 2 restrictor(s)",
+     "stretch_s": 1.7
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "P13b",
+   "pi": "Fernandez-Pello",
+   "table_row": 87,
+   "sample": "203m",
+   "material": "0.5\" black rod",
+   "restrictors": 2,
+   "fan_display": "Fan pot 1.3 (5cm/s) 0.4 0.36 0.32 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "86",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 20.6,
+   "o2_final": 20.2,
+   "observation": "Fan pot 1.3 (5 cm/s), 0.4, 0.36, 0.32; flame out when pot turned to 0.32",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.32,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.32,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.6,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 16.7
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.2,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.2,
+      20.6
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.0
+    }
+   ],
+   "rod_radius_cm": 0.635
+  },
+  {
+   "test": "P14",
+   "pi": "Fernandez-Pello",
+   "table_row": 88,
+   "sample": "189M",
+   "material": "1/4 blac rod",
+   "restrictors": 2,
+   "fan_display": "46 41",
+   "air_display": "5 low (.85 .4 .32)",
+   "found": true,
+   "as_run": "29",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 18.4,
+   "o2_final": 18.0,
+   "observation": "All blue, extinguished at 0.31",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.31,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.31,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 18.0,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      18.0,
+      18.4
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P15",
+   "pi": "Fernandez-Pello",
+   "table_row": 89,
+   "sample": "190M",
+   "material": "1/4 black rod",
+   "restrictors": 2,
+   "fan_display": "46 41",
+   "air_display": "5 (0.36)",
+   "found": true,
+   "as_run": "30",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 18.0,
+   "o2_final": 17.5,
+   "observation": "Nice stable burn with sooty tail but blue leading edge",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P16",
+   "pi": "Fernandez-Pello",
+   "table_row": 90,
+   "sample": "191m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "49 62 44 41.5 41 (pots 1.3 2.8 0.7 0.4 0.36 0.32)",
+   "air_display": "5 8 2 low",
+   "found": true,
+   "as_run": "93",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "a favor do vento",
+   "o2_initial": 18.2,
+   "o2_final": 17.4,
+   "observation": "Extinguished at pot 0.32, one high flow setting",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.32,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.32,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.2,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.4,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.4,
+      18.2
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P17",
+   "pi": "Fernandez-Pello",
+   "table_row": 91,
+   "sample": "192m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "60 52 48 233 48 41 (2.6 1.6 1.2 10 1.2 0.36 0.34)",
+   "air_display": "5 3 2 22 2 low",
+   "found": true,
+   "as_run": "105",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 16.8,
+   "o2_final": 16.5,
+   "observation": "A few finite flows, then tried blowoff without success, turned back down to 2 cm/s, then 0.36, 0.34 pots, oscillated and out at 0.34; leading edge receded slightly but did not blowoff",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.34,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": true,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.34,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.1,
+    "source": "pot 0.34 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.5,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.34 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.5,
+      16.8
+     ],
+     "flow_range": [
+      0.0,
+      2.1
+     ],
+     "stretch_s": 3.3
+    },
+    {
+     "state": "vento_nao_apagou",
+     "o2": 16.5,
+     "flow_cm_s": 22.0,
+     "source": "highest speed in the Air display column",
+     "stretch_s": 103.9
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P18",
+   "pi": "Fernandez-Pello",
+   "table_row": 92,
+   "sample": "193m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "55 47 etc (pot 1 2 1 2 etc)",
+   "air_display": "2 0 2 0 etc",
+   "found": true,
+   "as_run": "107",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 20.0,
+   "o2_final": 19.0,
+   "observation": "Alternated fan pot between 1 and 2 at 1-min intervals to try to get time constant resolution; finally turned pot down slowly, extinction at fan pot 0.32",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.32,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.32,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.0,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 9.4
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 19.0,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      19.0,
+      20.0
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.8
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P19",
+   "pi": "Fernandez-Pello",
+   "table_row": 93,
+   "sample": "194m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "49 62 44 41.5 122 41 (pots 1.3 2.8 0.7 0.4 0.36 10. 0.32)",
+   "air_display": "5 8 2 max 0",
+   "found": true,
+   "as_run": "94",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.5,
+   "o2_final": 16.7,
+   "observation": "Tried blowoff, did not blowoff at pot 10 2 restrictors, flame out at 0.32, sample mostly gone",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.32,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": true,
+   "tried_pot": 10.0,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.32,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.5,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.7,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      16.7,
+      17.5
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.8
+    },
+    {
+     "state": "vento_nao_apagou",
+     "o2": 16.7,
+     "flow_cm_s": 33.7,
+     "source": "pot 10 with 2 restrictor(s), converted with the fan calibration",
+     "stretch_s": 159.1
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P20",
+   "pi": "Fernandez-Pello",
+   "table_row": 94,
+   "sample": "195m",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "55 47 etc (pot 1 2 1 2 etc)",
+   "air_display": "2 0 2 0 etc",
+   "found": true,
+   "as_run": "109",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 19.0,
+   "o2_final": 18.2,
+   "observation": "Alternated fan pot between 1 and 2 at 1-min intervals to try to get time constant resolution; finally turned pot down slowly, extinction at fan pot 0.335",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.335,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.335,
+    "flow_cm_s": 0.7,
+    "flow_min": 0.0,
+    "flow_max": 2.0,
+    "source": "pot 0.335 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 19.0,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 9.4
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 18.2,
+     "flow_cm_s": 0.7,
+     "source": "pot 0.335 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      18.2,
+      19.0
+     ],
+     "flow_range": [
+      0.0,
+      2.0
+     ],
+     "stretch_s": 3.3
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P21a",
+   "pi": "Fernandez-Pello",
+   "table_row": 95,
+   "sample": "196M",
+   "material": "1/4 black rod",
+   "restrictors": 2,
+   "fan_display": "46",
+   "air_display": "5",
+   "found": true,
+   "as_run": "31",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 16.3,
+   "o2_final": 16.3,
+   "observation": "Flame self-extinguished at 5 cm/s after sample end became flat, dim flame",
+   "ignited": true,
+   "end": "self",
+   "pot": null,
+   "fan": null,
+   "air": 5.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out on its own, with no change to the airflow",
+   "form": "bastão de acrílico",
+   "limit": {
+    "flow_cm_s": 5.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.3,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 23.6
+    },
+    {
+     "state": "apagou_sozinha",
+     "o2": 16.3,
+     "flow_cm_s": 5.0,
+     "source": "air speed quoted in the observation (anemometer)",
+     "stretch_s": 23.6
+    }
+   ],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P21b",
+   "pi": "Fernandez-Pello",
+   "table_row": 96,
+   "sample": "196M",
+   "material": "1/4\" black rod",
+   "restrictors": 2,
+   "fan_display": "46",
+   "air_display": "5",
+   "found": true,
+   "as_run": "32",
+   "pdf_page": 114,
+   "report_page": 106,
+   "geometry": "contra o vento",
+   "o2_initial": 16.3,
+   "o2_final": 16.3,
+   "observation": "Igniter broke after third attempt to ignite flattened end of sample",
+   "ignited": null,
+   "end": "unknown",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The igniter broke; no test was run.",
+   "end_label": "the report does not describe what happened",
+   "form": "bastão de acrílico",
+   "limit": null,
+   "points": [],
+   "rod_radius_cm": 0.3175
+  },
+  {
+   "test": "P22a",
+   "pi": "Fernandez-Pello",
+   "table_row": 97,
+   "sample": "200m",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "5 0.36 0.32 ext after some time",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "68",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 20.8,
+   "o2_final": null,
+   "observation": "Extinguished at higher flow, possibly rod not preheated enough by a bit, CO readings elevated, slow response",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.32,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "went out, no reason given"
+   ],
+   "flags": [],
+   "reviewed": "The observation says 'extinguished at higher flow'; the setting comes from the fan column: '0.36, 0.32 extinction'.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.32,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.8,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.32 with 2 restrictor(s), converted with the fan calibration",
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P22b",
+   "pi": "Fernandez-Pello",
+   "table_row": 98,
+   "sample": "200m",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "5 p.36 0.34 0.33 0.32 0.31 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "69",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 20.0,
+   "o2_final": null,
+   "observation": "Extinguished at lower flow than P22a by a bit, longer slower decrease in flow, CO elevated, slow response",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.31,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "The observation says it went out with less air than P22a; the setting comes from the fan column: '... 0.32, 0.31, extinction'.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.31,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.0,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.0,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P23",
+   "pi": "Fernandez-Pello",
+   "table_row": 99,
+   "sample": "201m",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "55 47 etc (pot 1 2 1 2 etc)",
+   "air_display": "2 0 2 0 etc",
+   "found": true,
+   "as_run": "110",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 18.2,
+   "o2_final": 17.0,
+   "observation": "Alternated fan pot between 1 and 2 at 1-min then 2-min intervals to try to get time constant resolution; finally turned pot down slowly, extinction at fan pot 0.38",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.38,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.38,
+    "flow_cm_s": 0.8,
+    "flow_min": 0.0,
+    "flow_max": 2.3,
+    "source": "pot 0.38 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.2,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 7.7
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.0,
+     "flow_cm_s": 0.8,
+     "source": "pot 0.38 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.0,
+      18.2
+     ],
+     "flow_range": [
+      0.0,
+      2.3
+     ],
+     "stretch_s": 3.1
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P24",
+   "pi": "Fernandez-Pello",
+   "table_row": 100,
+   "sample": "819L",
+   "material": "3/8\" black rod",
+   "restrictors": 2,
+   "fan_display": "55 47 etc (pot 1 2 1 2 etc)",
+   "air_display": "2 0 2 0 etc",
+   "found": true,
+   "as_run": "108",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 19.0,
+   "o2_final": 17.5,
+   "observation": "Alternated fan pot between 1 and 2 at 1-min intervals to try to get time constant resolution; finally turned pot down slowly, extinction at fan pot 0.30",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.3,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.3,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.8,
+    "source": "pot 0.3 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 19.0,
+     "flow_cm_s": 2.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 7.7
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.5,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.3 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.5,
+      19.0
+     ],
+     "flow_range": [
+      0.0,
+      1.8
+     ],
+     "stretch_s": 2.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "P25",
+   "pi": "Fernandez-Pello",
+   "table_row": 101,
+   "sample": "217m",
+   "material": "3/8\" clear rod",
+   "restrictors": 2,
+   "fan_display": "5 p.36 0.34 0.33 0.32 0.31 ext",
+   "air_display": "5 down to ext",
+   "found": true,
+   "as_run": "70",
+   "pdf_page": 115,
+   "report_page": 107,
+   "geometry": "contra o vento",
+   "o2_initial": 20.9,
+   "o2_final": 20.2,
+   "observation": "Reburn of 217m in opposed geometry, repeat of P22b, extinguished at same 0.31 pot, more sparklers from flame, and less leading edge vapor jetting, or more central jetting; rod warped downward in video view at end of test, asymmetrical instabilities noted briefly at pot change to 0.32, CO elevated, slow response",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.31,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "bastão de acrílico",
+   "limit": {
+    "pot": 0.31,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.9,
+    "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.9,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display",
+     "stretch_s": 19.3
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.2,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.31 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.2,
+      20.9
+     ],
+     "flow_range": [
+      0.0,
+      1.9
+     ],
+     "stretch_s": 2.3
+    }
+   ],
+   "rod_radius_cm": 0.4763
+  },
+  {
+   "test": "T1",
+   "pi": "T'ien",
+   "table_row": 102,
+   "sample": "128",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "80",
+   "air_display": "10",
+   "found": true,
+   "as_run": "1",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": null,
+   "o2_initial": 18.5,
+   "o2_final": 18.5,
+   "observation": "Compound Specific Analyzer-Combustion Products (CSA- CP) unit 1024; Carbon Dioxide Monitor (CDM) unit 1018; Prefill O2 reading = 20.9 percent; GN2 fill was from video display time 10:53 to 12:31 at maximum GN2 flow rate (pot = 10); Video display time is currently 1 day plus 6 min 10 s ahead of actual GMT; flow velocity held constant",
+   "ignited": null,
+   "end": "unknown",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "the report does not describe what happened",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": []
+  },
+  {
+   "test": "T2",
+   "pi": "T'ien",
+   "table_row": 103,
+   "sample": "129",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "80 59 55",
+   "air_display": "9 5 4",
+   "found": true,
+   "as_run": "2",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": null,
+   "o2_initial": 18.5,
+   "o2_final": 18.5,
+   "observation": "Flow velocity changed to 9 to 5 fairly early then very late in the burn changed to 4",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.5,
+     "flow_cm_s": 9.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T3",
+   "pi": "T'ien",
+   "table_row": 104,
+   "sample": "182m",
+   "material": "4 cm spherical section",
+   "restrictors": 2,
+   "fan_display": "63",
+   "air_display": "10",
+   "found": true,
+   "as_run": "43",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": null,
+   "o2_initial": 17.2,
+   "o2_final": 16.8,
+   "observation": "Multiple ignition attempts on card 3, brief flames go out",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "esfera de acrílico",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 17.2,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T4",
+   "pi": "T'ien",
+   "table_row": 105,
+   "sample": "130",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "80 46",
+   "air_display": "9 1",
+   "found": true,
+   "as_run": "3",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": null,
+   "o2_initial": 18.7,
+   "o2_final": 18.7,
+   "observation": "O2 reading creeped up slightly after a long pause in operations; flow velocity changed immediately after ignition down to 1 (fan pot 0.9); extinguished after turning into flamelet",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 1,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "went out, no reason given"
+   ],
+   "flags": [],
+   "reviewed": "The air was reduced to 1 cm/s right after ignition; the flame became a minimal flame and went out.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "flow_cm_s": 1,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.7,
+     "flow_cm_s": 9.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 18.7,
+     "flow_cm_s": 1,
+     "source": "air speed quoted in the observation (anemometer)"
+    }
+   ]
+  },
+  {
+   "test": "T5",
+   "pi": "T'ien",
+   "table_row": 106,
+   "sample": "131",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "2.72 0.50 0.42",
+   "air_display": "10 2 1",
+   "found": true,
+   "as_run": "19",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 18.8,
+   "o2_final": 18.9,
+   "observation": "HCN 0 HCL 0.6; ignited at 10, turned down to 2, then 1, sample very small and dim, but seemed to burn full sample length as a flamelet",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.8,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T6",
+   "pi": "T'ien",
+   "table_row": 107,
+   "sample": "132",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 2 1 <1",
+   "found": true,
+   "as_run": "20",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 18.8,
+   "o2_final": 18.8,
+   "observation": "HCL 0.9 at the end, still did not extinguish",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T7",
+   "pi": "T'ien",
+   "table_row": 108,
+   "sample": "182m",
+   "material": "4 cm spherical section",
+   "restrictors": 2,
+   "fan_display": "3.4 67",
+   "air_display": "10 5 3 1 decr",
+   "found": true,
+   "as_run": "75",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": null,
+   "o2_initial": 17.3,
+   "o2_final": 17.1,
+   "observation": "Broke one igniter quickly, took a while to ignite, turned pot down in series ignition at 3.4, 1.6, 1.0, 0.4, 0.36, 0.34, 0.32, 0.31, 0.30, 0.29, 0.285, 0.28 extinction finally, HCl 1.8",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.28,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "esfera de acrílico",
+   "limit": {
+    "pot": 0.28,
+    "flow_cm_s": 0.6,
+    "flow_min": 0.0,
+    "flow_max": 1.7,
+    "source": "pot 0.28 with 2 restrictor(s), converted with the fan calibration",
+    "below_resolution": true
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.3,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.1,
+     "flow_cm_s": 0.6,
+     "source": "pot 0.28 with 2 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      17.1,
+      17.3
+     ],
+     "flow_range": [
+      0.0,
+      1.7
+     ]
+    }
+   ]
+  },
+  {
+   "test": "T9",
+   "pi": "T'ien",
+   "table_row": 109,
+   "sample": "133M",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "pot 2.5",
+   "air_display": "10",
+   "found": true,
+   "as_run": "33",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.4,
+   "o2_final": 16.4,
+   "observation": "Brief ignition but flame extinguished before spreading beyond igniter",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 16.4,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T10",
+   "pi": "T'ien",
+   "table_row": 110,
+   "sample": "134M",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "pot 1.1",
+   "air_display": "5",
+   "found": true,
+   "as_run": "34",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.4,
+   "o2_final": 16.5,
+   "observation": "Brief ignition but flame extinguished before spreading beyond igniter",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 16.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T11",
+   "pi": "T'ien",
+   "table_row": 111,
+   "sample": "135m",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "48",
+   "air_display": "5",
+   "found": true,
+   "as_run": "42",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.1,
+   "o2_final": 17.0,
+   "observation": "Burned completely, steady, HCl 0.3 to 0.9",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.1,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T12",
+   "pi": "T'ien",
+   "table_row": 112,
+   "sample": "136m",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "pot 1.1",
+   "air_display": "5",
+   "found": true,
+   "as_run": "44",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.8,
+   "o2_final": 16.9,
+   "observation": "Extinguished quickly",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 16.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T13",
+   "pi": "T'ien",
+   "table_row": 113,
+   "sample": "137",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 1",
+   "found": true,
+   "as_run": "21",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.5,
+   "o2_final": 17.6,
+   "observation": "HCL 0.2 end, 0.1 start, no HCN, flame extinguished quickly after flow change.",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 1,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "Went out right after the change from 5 to 1 cm/s (Air display column); the rule had read it as a flame that did not sustain.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "flow_cm_s": 1,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.5,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.6,
+     "flow_cm_s": 1,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      17.5,
+      17.6
+     ]
+    }
+   ]
+  },
+  {
+   "test": "T14",
+   "pi": "T'ien",
+   "table_row": 114,
+   "sample": "140m",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 3",
+   "found": true,
+   "as_run": "45",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.9,
+   "o2_final": 16.9,
+   "observation": "Extinguished as we reduced flow below 3 cm/s",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 3.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "flow_cm_s": 3.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.9,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 16.9,
+     "flow_cm_s": 3.0,
+     "source": "air speed quoted in the observation (anemometer)"
+    }
+   ]
+  },
+  {
+   "test": "T15",
+   "pi": "T'ien",
+   "table_row": 115,
+   "sample": "138",
+   "material": "2 cm SIBAL",
+   "restrictors": 0,
+   "fan_display": "80122",
+   "air_display": "9 29",
+   "found": true,
+   "as_run": "4",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": null,
+   "o2_initial": 18.7,
+   "o2_final": 18.7,
+   "observation": "Initial air reading is 15, but Rick did not wait long enough for the anemometer to stabilize; actual airspeed is about 9 cm/s; no flow restrictors installed, but flow only maxed out to 29 cm/s; no blowoff attained",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": true,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.7,
+     "flow_cm_s": 9.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "vento_nao_apagou",
+     "o2": 18.7,
+     "flow_cm_s": 29.0,
+     "source": "highest speed in the Air display column"
+    }
+   ]
+  },
+  {
+   "test": "T16",
+   "pi": "T'ien",
+   "table_row": 116,
+   "sample": "139",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 3",
+   "found": true,
+   "as_run": "22",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.6,
+   "o2_final": 17.5,
+   "observation": "Initial HCl 0.2 final 0.5, no HCN, flame spread whole sample at 3 cm/s",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.6,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T17",
+   "pi": "T'ien",
+   "table_row": 117,
+   "sample": "142m",
+   "material": "2 cm SIBAL",
+   "restrictors": 0,
+   "fan_display": "",
+   "air_display": "6 53",
+   "found": true,
+   "as_run": "46",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 16.9,
+   "o2_final": 16.9,
+   "observation": "Tried to blowoff, but did not",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": true,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 16.9,
+     "flow_cm_s": 6.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "vento_nao_apagou",
+     "o2": 16.9,
+     "flow_cm_s": 53.0,
+     "source": "highest speed in the Air display column"
+    }
+   ]
+  },
+  {
+   "test": "T18",
+   "pi": "T'ien",
+   "table_row": 118,
+   "sample": "141M",
+   "material": "2 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "",
+   "air_display": "5 2",
+   "found": true,
+   "as_run": "35",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.4,
+   "o2_final": 17.4,
+   "observation": "Brief ignition but flame extinguished as it spread away from igniter, further than previous runs today",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 17.4,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T19",
+   "pi": "T'ien",
+   "table_row": 119,
+   "sample": "143m",
+   "material": "1 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "68.5 pot 3.6",
+   "air_display": "11",
+   "found": true,
+   "as_run": "71",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.2,
+   "o2_final": 17.2,
+   "observation": "Steady burn, HCL 0.3 > 0.6",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.2,
+     "flow_cm_s": 11.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T20",
+   "pi": "T'ien",
+   "table_row": 120,
+   "sample": "144m",
+   "material": "1 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "3.6 0.9",
+   "air_display": "11 3",
+   "found": true,
+   "as_run": "72",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.2,
+   "o2_final": 17.2,
+   "observation": "Quick extinction when we turned air down to 3 cm/s, HCl 0.8 end",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 3.0,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "went out when the airflow became too weak",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "flow_cm_s": 3.0,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.2,
+     "flow_cm_s": 11.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.2,
+     "flow_cm_s": 3.0,
+     "source": "air speed quoted in the observation (anemometer)"
+    }
+   ]
+  },
+  {
+   "test": "T21",
+   "pi": "T'ien",
+   "table_row": 121,
+   "sample": "145m",
+   "material": "1 cm SIBAL",
+   "restrictors": 0,
+   "fan_display": "1.6 pot 52",
+   "air_display": "11 max(47)",
+   "found": true,
+   "as_run": "73",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.2,
+   "o2_final": 17.2,
+   "observation": "Successful blowoff! HCl still 0.8 end",
+   "ignited": true,
+   "end": "blowoff",
+   "pot": null,
+   "fan": null,
+   "air": 47,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "Blown out with the fan at maximum and no restrictors; the PSI table records 47 cm/s.",
+   "end_label": "blown out by strong airflow",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "flow_cm_s": 47,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.2,
+     "flow_cm_s": 11.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_vento",
+     "o2": 17.2,
+     "flow_cm_s": 47,
+     "source": "air speed quoted in the observation (anemometer)"
+    }
+   ]
+  },
+  {
+   "test": "T22",
+   "pi": "T'ien",
+   "table_row": 122,
+   "sample": "146m",
+   "material": "1 cm SIBAL",
+   "restrictors": 2,
+   "fan_display": "3.4 1.7",
+   "air_display": "10 5",
+   "found": true,
+   "as_run": "76",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.1,
+   "o2_final": 17.0,
+   "observation": "Ignited at 11, turned down to 5 and extinguished, HCl 2.0",
+   "ignited": true,
+   "end": "quench",
+   "pot": null,
+   "fan": null,
+   "air": 5,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "reviewed": "Ignited at 11 cm/s; the air was reduced to 5 cm/s and the flame went out.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "flow_cm_s": 5,
+    "source": "air speed quoted in the observation (anemometer)"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 17.1,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 17.0,
+     "flow_cm_s": 5,
+     "source": "air speed quoted in the observation (anemometer)",
+     "o2_range": [
+      17.0,
+      17.1
+     ]
+    }
+   ]
+  },
+  {
+   "test": "T23",
+   "pi": "T'ien",
+   "table_row": 123,
+   "sample": "133m",
+   "material": "2 cm Sibal moved igniter",
+   "restrictors": 2,
+   "fan_display": "3.3 66",
+   "air_display": "10",
+   "found": true,
+   "as_run": "74",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 17.2,
+   "o2_final": 17.3,
+   "observation": "Did not ignite with moved igniter, HCl 0.8",
+   "ignited": false,
+   "end": "not_ignited",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "did not ignite",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 17.2,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T24",
+   "pi": "T'ien",
+   "table_row": 124,
+   "sample": "133m",
+   "material": "1 cm SIBAL top side ign",
+   "restrictors": 2,
+   "fan_display": "3.3 66",
+   "air_display": "10",
+   "found": true,
+   "as_run": "77",
+   "pdf_page": 120,
+   "report_page": 112,
+   "geometry": "a favor do vento",
+   "o2_initial": 18.2,
+   "o2_final": 18.2,
+   "observation": "Ignited top of sample with retractable igniter and got steady spread of a one-sided flame",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 18.2,
+     "flow_cm_s": 10.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T25",
+   "pi": "T'ien",
+   "table_row": 125,
+   "sample": "138m",
+   "material": "2 cm SIBAL",
+   "restrictors": 1,
+   "fan_display": "53 45",
+   "air_display": "5 2.5",
+   "found": true,
+   "as_run": "119",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 20.8,
+   "o2_final": 20.7,
+   "observation": "Ignition at 5 cm/s then decrease to 2.5 cm/s and hold constant",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T26",
+   "pi": "T'ien",
+   "table_row": 126,
+   "sample": "137m",
+   "material": "2 cm SIBAL",
+   "restrictors": 1,
+   "fan_display": "53 45",
+   "air_display": "5 2.5",
+   "found": true,
+   "as_run": "120",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 20.8,
+   "o2_final": 20.7,
+   "observation": "Ignition at 5 cm/s then decrease to 2.5 cm/s and hold constant",
+   "ignited": true,
+   "end": "burned",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned; the report does not say how it ended",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.8,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T27",
+   "pi": "T'ien",
+   "table_row": 127,
+   "sample": "146m",
+   "material": "1 cm SIBAL",
+   "restrictors": 1,
+   "fan_display": "53 45",
+   "air_display": "5 2",
+   "found": true,
+   "as_run": "122",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 20.7,
+   "o2_final": 20.6,
+   "observation": "Ignition at 5 cm/s, then quickly to 2 cm/s (fan pot 0.7); fuel is burned out",
+   "ignited": true,
+   "end": "burnout",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "burned until the sample was consumed",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T28a",
+   "pi": "T'ien",
+   "table_row": 128,
+   "sample": "144m",
+   "material": "1 cm SIBAL",
+   "restrictors": 1,
+   "fan_display": "53",
+   "air_display": "5",
+   "found": true,
+   "as_run": "123",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 20.7,
+   "o2_final": null,
+   "observation": "Tried to get one-sided ignition, but flame only briefly flashed then went out",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 20.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T28b",
+   "pi": "T'ien",
+   "table_row": 129,
+   "sample": "144m",
+   "material": "1 cm SIBAL",
+   "restrictors": 1,
+   "fan_display": "53",
+   "air_display": "5",
+   "found": true,
+   "as_run": "124",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 20.7,
+   "o2_final": null,
+   "observation": "Tried to get one-sided ignition, but again flame only briefly flashed then went out",
+   "ignited": true,
+   "end": "not_sustained",
+   "pot": null,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [],
+   "flags": [],
+   "end_label": "ignited briefly but did not sustain",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": null,
+   "points": [
+    {
+     "state": "nao_sustentou",
+     "o2": 20.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    }
+   ]
+  },
+  {
+   "test": "T29",
+   "pi": "T'ien",
+   "table_row": 130,
+   "sample": "145m",
+   "material": "1 cm SIBAL",
+   "restrictors": 1,
+   "fan_display": "53 43",
+   "air_display": "5 2(?)",
+   "found": true,
+   "as_run": "125",
+   "pdf_page": 121,
+   "report_page": 113,
+   "geometry": "a favor do vento",
+   "o2_initial": 20.7,
+   "o2_final": 20.5,
+   "observation": "Alex commented that he thought the angle of the igniter should be reversed to get one-sided ignition, so he tried that; one-sided flame initially but quickly became two-sided; after ignition, fan pot changed to 0.6 and flame went out after a few seconds",
+   "ignited": true,
+   "end": "quench",
+   "pot": 0.6,
+   "fan": null,
+   "air": null,
+   "blowoff_failed": false,
+   "tried_pot": null,
+   "basis": [
+    "went out, no reason given"
+   ],
+   "flags": [],
+   "reviewed": "The potentiometer went to 0.6 and the flame went out seconds later.",
+   "end_label": "went out when the airflow became too weak",
+   "form": "tecido de algodão (SIBAL)",
+   "limit": {
+    "pot": 0.6,
+    "flow_cm_s": 2.4,
+    "flow_min": 2.2,
+    "flow_max": 2.6,
+    "source": "pot 0.6 with 1 restrictor(s), converted with the fan calibration"
+   },
+   "points": [
+    {
+     "state": "queimou",
+     "o2": 20.7,
+     "flow_cm_s": 5.0,
+     "source": "velocidade de partida na coluna Air display"
+    },
+    {
+     "state": "apagou_pouco_ar",
+     "o2": 20.5,
+     "flow_cm_s": 2.4,
+     "source": "pot 0.6 with 1 restrictor(s), converted with the fan calibration",
+     "o2_range": [
+      20.5,
+      20.7
+     ],
+     "flow_range": [
+      2.2,
+      2.6
+     ]
+    }
+   ]
+  }
+ ],
+ "audit": [
+  {
+   "test": "B2",
+   "table_row": 3,
+   "field": "Calibrated final O₂ (%)",
+   "table": 1.6,
+   "report": 1.6,
+   "pdf_page": 112,
+   "report_page": 104,
+   "kind": "impossible value in both sources",
+   "severity": "alta",
+   "note": "1.6 is the difference between the calibrated and the read O₂ at the start of the test (22.2 − 20.6). The final reading is blank in the report: the calibration correction was left alone in the cell."
+  },
+  {
+   "test": "P22a",
+   "table_row": 97,
+   "field": "Calibrated final O₂ (%)",
+   "table": 0.6,
+   "report": 0.6,
+   "pdf_page": 115,
+   "report_page": 107,
+   "kind": "impossible value in both sources",
+   "severity": "alta",
+   "note": "0.6 is the difference between the calibrated and the read O₂ at the start of the test (20.8 − 20.2). The final reading is blank in the report: the calibration correction was left alone in the cell."
+  },
+  {
+   "test": "P22b",
+   "table_row": 98,
+   "field": "Calibrated final O₂ (%)",
+   "table": 39.1,
+   "report": 39.1,
+   "pdf_page": 115,
+   "report_page": 107,
+   "kind": "impossible value in both sources",
+   "severity": "alta",
+   "note": "39.1 is the sum of the initial calibrated O₂ and the final read O₂ (20 + 19.1). The initial reading is blank in the report."
+  },
+  {
+   "test": "T28a",
+   "table_row": 128,
+   "field": "Calibrated final O₂ (%)",
+   "table": 0.9,
+   "report": 0.9,
+   "pdf_page": 121,
+   "report_page": 113,
+   "kind": "impossible value in both sources",
+   "severity": "alta",
+   "note": "0.9 is the difference between the calibrated and the read O₂ at the start of the test (20.7 − 19.8). The final reading is blank in the report: the calibration correction was left alone in the cell."
+  },
+  {
+   "test": "T28b",
+   "table_row": 129,
+   "field": "Calibrated final O₂ (%)",
+   "table": 40.4,
+   "report": 40.4,
+   "pdf_page": 121,
+   "report_page": 113,
+   "kind": "impossible value in both sources",
+   "severity": "alta",
+   "note": "40.4 is the sum of the initial calibrated O₂ and the final read O₂ (20.7 + 19.7). The initial reading is blank in the report."
+  },
+  {
+   "test": "F3",
+   "table_row": 26,
+   "field": "Calibrated final O₂ (%)",
+   "table": null,
+   "report": 0.9,
+   "pdf_page": 113,
+   "report_page": 105,
+   "kind": "impossible value in the report",
+   "severity": "média",
+   "note": "0.9 is the difference between the calibrated and the read O₂ at the start of the test (21.7 − 20.8). The final reading is blank in the report: the calibration correction was left alone in the cell. The PSI table leaves the field blank, which is correct."
+  },
+  {
+   "test": "O20",
+   "table_row": 72,
+   "field": "teste",
+   "table": "present",
+   "report": null,
+   "kind": "table test missing from the report",
+   "severity": "média",
+   "note": "It is in the PSI table and does not appear in any of the test matrices in appendix A of the report."
+  },
+  {
+   "test": "O21",
+   "table_row": 73,
+   "field": "teste",
+   "table": "present",
+   "report": null,
+   "kind": "table test missing from the report",
+   "severity": "média",
+   "note": "It is in the PSI table and does not appear in any of the test matrices in appendix A of the report."
+  },
+  {
+   "test": "O22",
+   "table_row": 74,
+   "field": "teste",
+   "table": "present",
+   "report": null,
+   "kind": "table test missing from the report",
+   "severity": "média",
+   "note": "It is in the PSI table and does not appear in any of the test matrices in appendix A of the report."
+  },
+  {
+   "test": "P3a",
+   "table_row": 77,
+   "field": "Initial CO (ppm)",
+   "table": 2.0,
+   "report": 33.0,
+   "pdf_page": 115,
+   "report_page": 107,
+   "kind": "shifted columns",
+   "severity": "média",
+   "note": "The table's final CO (33 ppm) appears in the report as the initial CO. One of the two sources is shifted by one column."
+  },
+  {
+   "test": "P3a",
+   "table_row": 77,
+   "field": "Final CO (ppm)",
+   "table": 33.0,
+   "report": null,
+   "pdf_page": 115,
+   "report_page": 107,
+   "kind": "shifted columns",
+   "severity": "média",
+   "note": "The table's final CO (33 ppm) appears in the report as the initial CO. One of the two sources is shifted by one column."
+  },
+  {
+   "test": "P22b",
+   "table_row": 98,
+   "field": "Final CO (ppm)",
+   "table": 239.0,
+   "report": 236.0,
+   "pdf_page": 115,
+   "report_page": 107,
+   "kind": "different values",
+   "severity": "média",
+   "note": "Difference of 3."
+  },
+  {
+   "test": "O8b",
+   "table_row": 58,
+   "field": "fan setting",
+   "table": null,
+   "report": null,
+   "pdf_page": 119,
+   "report_page": 111,
+   "kind": "two columns of the same row disagree",
+   "severity": "baixa",
+   "note": "The fan column records the extinction at pot 6 and the observation gives fan display 78, which corresponds to pot 4.73."
+  },
+  {
+   "test": "P7",
+   "table_row": null,
+   "field": "teste",
+   "table": null,
+   "report": null,
+   "kind": "test number with no record",
+   "severity": "baixa",
+   "note": "The numbering jumps from P6 to P8 in both sources. They give no way to know whether the test was run."
+  },
+  {
+   "test": "P11",
+   "table_row": null,
+   "field": "teste",
+   "table": null,
+   "report": null,
+   "kind": "test number with no record",
+   "severity": "baixa",
+   "note": "The numbering jumps from P10 to P12 in both sources. They give no way to know whether the test was run."
+  },
+  {
+   "test": "T8",
+   "table_row": null,
+   "field": "teste",
+   "table": null,
+   "report": null,
+   "kind": "test number with no record",
+   "severity": "baixa",
+   "note": "The numbering jumps from T7 to T9 in both sources. They give no way to know whether the test was run."
+  }
+ ]
+}

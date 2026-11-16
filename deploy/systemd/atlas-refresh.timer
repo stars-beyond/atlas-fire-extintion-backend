@@ -1,0 +1,11 @@
+[Unit]
+Description=Atlas: atualização diária do acervo a partir do PSI (@REFRESH_AT@)
+
+[Timer]
+OnCalendar=@REFRESH_AT@
+RandomizedDelaySec=15min
+Persistent=true
+Unit=atlas-refresh.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,27 @@
+Date,Oxygen [%],Pressure [bar],Flow Velocity [cm/s],Flow Direction [opposed/concurrent],Sample Material [Material],Manufacturer [Company],Gaps [Sequence],Gap Material [Material],Thickness [mm],Pixel Ratio [mm/px],Data Location [File],Frame Rate [fps]
+2022-03-08,23.6,0.9,20.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.201,exp0.hdf5,8.33
+2022-03-08,28.3,0.75,20.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.201,exp1.hdf5,8.33
+2022-03-14,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.201,exp2.hdf5,8.33
+2022-03-14,28.3,0.75,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp3.hdf5,8.33
+2022-03-21,21.0,1.013,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp4.hdf5,8.33
+2022-03-21,23.6,0.9,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp5.hdf5,8.33
+2022-03-22,35.4,0.6,10.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp6.hdf5,8.33
+2022-03-23,21.0,1.013,10.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp7.hdf5,8.33
+2022-03-23,23.6,0.9,10.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp8.hdf5,8.33
+2022-03-28,21.0,1.013,20.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp9.hdf5,8.33
+2022-03-29,28.3,0.75,10.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",,,0.075,0.19,exp10.hdf5,8.33
+2022-05-23,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",3/5/7/10,Air,0.075,0.19,exp11.hdf5,8.33
+2022-05-24,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",7/10/12,Air,0.075,0.19,exp12.hdf5,8.33
+2022-05-25,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",5/7/10,Air,0.075,0.19,exp13.hdf5,8.33
+2022-05-30,21.0,1.013,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",3/5/7,Air,0.075,0.19,exp14.hdf5,8.33
+2022-05-30,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",5/5/5/5,Air,0.075,0.19,exp15.hdf5,8.33
+2022-05-31,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",6/7/8,Air,0.075,0.19,exp16.hdf5,8.33
+2022-05-31,28.3,0.75,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",4/5/6,Air,0.075,0.19,exp17.hdf5,8.33
+2022-06-01,23.6,0.9,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",4/5/6,Air,0.075,0.19,exp18.hdf5,8.33
+2022-06-01,28.3,0.75,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",5/5/5,Air,0.075,0.19,exp19.hdf5,8.33
+2022-06-02,21.0,1.013,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",3/3/3,Air,0.075,0.19,exp20.hdf5,8.33
+2022-06-02,23.6,0.9,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",4/4/4,Air,0.075,0.19,exp21.hdf5,8.33
+2022-06-03,28.3,0.75,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",4/5/6,Air,0.075,0.19,exp22.hdf5,8.33
+2022-06-03,35.4,0.6,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",5/6/7/8,Air,0.075,0.19,exp23.hdf5,8.33
+2022-06-07,23.6,0.9,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",4/5/6,Air,0.075,0.19,exp24.hdf5,8.33
+2022-06-08,21.0,1.013,15.0,opposed,PMMA,"CLAREX®, Nitto Jushi Kogyo Ltd.",3/4/5,Air,0.075,0.19,exp25.hdf5,8.33

@@ -1,0 +1,131 @@
+# CI do backend. CD: a VPS segue a branch `release`, que só este workflow avança (deploy/deploy.sh, a cada 30 s),
+# e sobe em blue/green. Um push na main só chega à produção depois de compilar, passar nos testes e não quebrar o
+# deploy (jobs api, python e deploy). O job scan (formatação, corridas, vulnerabilidades, segredos) avisa, mas
+# não segura o deploy.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main, dev]
+
+# O token do workflow só lê o repositório. O único job que escreve é o release, que declara isso nele mesmo.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# As actions são fixadas pelo commit (o comentário diz a versão): uma tag pode ser movida, um commit não.
+jobs:
+  api:
+    name: API (Go)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5.6.0
+        with:
+          go-version: "1.26.x"   # a mesma série da imagem de produção (api/Dockerfile)
+          check-latest: true
+          cache-dependency-path: api/go.sum
+      - run: go vet ./...
+      - run: go build ./...
+      - run: go test ./...
+
+  python:
+    name: Python (brain, rag, ml, scripts)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: Todo arquivo compila
+        run: python -m compileall -q brain rag ml scripts
+      # Só o que quebra em execução: erro de sintaxe, nome que não existe, comparação e uso inválidos. Estilo não entra.
+      - name: Erros de sintaxe e nomes indefinidos (ruff)
+        run: |
+          pip install --quiet ruff==0.17.5
+          ruff check --select E9,F63,F7,F82 brain rag ml scripts
+
+  deploy:
+    name: Deploy (scripts, compose, nginx)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Scripts
+        run: |
+          for f in deploy/*.sh; do bash -n "$f"; done
+          shellcheck -x -S warning -e SC1091,SC2016 deploy/*.sh
+      - name: Compose
+        run: |
+          docker compose -f docker-compose.yml config -q
+          docker compose -f docker-compose.yml -f deploy/compose.prod.yml config -q
+          COLOR=blue STACK=atlas-fire-extintion-backend docker compose --project-directory . -f deploy/api.compose.yml config -q
+      - name: nginx -t com a configuração de produção
+        run: |
+          mkdir -p /tmp/certs /tmp/active
+          openssl req -x509 -nodes -newkey rsa:2048 -days 1 -subj "/CN=ci" \
+            -keyout /tmp/certs/origin.key -out /tmp/certs/origin.pem 2>/dev/null
+          printf 'set $api_upstream http://api-blue:8787;\n' > /tmp/active/api.conf
+          image="$(grep -oE 'nginx:[^ ]+' deploy/compose.prod.yml | head -1)"   # a mesma imagem da produção
+          for active in /tmp/active /tmp/empty; do   # com cor ativa e sem (migração)
+            mkdir -p "$active"
+            docker run --rm \
+              -v "$PWD/deploy/nginx/conf.d:/etc/nginx/conf.d:ro" \
+              -v "$PWD/deploy/nginx/snippets:/etc/nginx/snippets:ro" \
+              -v "$active:/etc/nginx/active:ro" -v /tmp/certs:/etc/nginx/certs:ro \
+              "$image" nginx -t
+          done
+      - name: A rede interna do Docker não entra na lista de quem pode falar com a API
+        run: |
+          ! grep -nE '^\s*(172\.(1[6-9]|2[0-9]|3[01])\.|10\.|192\.168\.)[0-9./]+\s+1;' deploy/nginx/snippets/cloudflare.conf
+
+  # Avisos de segurança. Não está em `needs` do release: uma vulnerabilidade nova numa dependência, ou um falso
+  # positivo, deixa o commit com um X vermelho, mas não segura um deploy.
+  scan:
+    name: Avisos (formatação, corridas, vulnerabilidades, segredos)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 0   # o histórico inteiro: um segredo apagado num commit seguinte continua lá
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5.6.0
+        with:
+          go-version: "1.26.x"
+          check-latest: true
+          cache-dependency-path: api/go.sum
+      - name: Formatação e condições de corrida (gofmt, go test -race)
+        working-directory: api
+        run: |
+          test -z "$(gofmt -l .)" || { echo "arquivos fora do gofmt:"; gofmt -l .; exit 1; }
+          go test -race ./...
+      - name: Vulnerabilidades conhecidas no código Go que a API de fato chama (govulncheck)
+        if: always()
+        working-directory: api
+        run: go run golang.org/x/vuln/cmd/govulncheck@latest ./...
+      - name: Segredos no histórico do git (gitleaks)
+        if: always()
+        run: docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest git /repo --redact --no-banner
+      - name: Dockerfiles e compose (trivy config)
+        if: always()
+        run: docker run --rm -v "$PWD:/repo" -w /repo aquasec/trivy:latest config --severity HIGH,CRITICAL --exit-code 1 .
+
+  # Libera o deploy: avança a branch `release` para este commit. A VPS só sobe o que está nela.
+  release:
+    name: Libera o deploy (branch release)
+    needs: [api, python, deploy]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 0
+      # Sem --force: a release só anda para a frente. Se a main for reescrita, isto falha e alguém decide à mão.
+      - run: git push origin "$GITHUB_SHA:refs/heads/release"

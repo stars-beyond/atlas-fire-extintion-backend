@@ -1,0 +1,266 @@
+{
+ "accession": "PSI-26",
+ "investigationAcronym": "BASS",
+ "title": "Burning and Suppression of Solids",
+ "description": "",
+ "objective": "The two main objectives for BASS are to:\n    1.) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test#1 method, ground-based microgravity tests, and actual material flammability in microgravity. The relation between these can be investigated by observing flames burning for the longer times available in flight. Practical, realistic (thicker) fuels in typical geometries will be examined, including wake flames which have characteristics of a fire burning behind another object (for example, a fire burning in tight area which may not be easily accessible).\n    2.) Assess the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over different materials, geometries, preheating, and flow.",
+ "approach": "The experiment was conducted aboard the International Space Station (ISS) inside the Microgravity Glove Box (MSG). Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem. A Kanthal wire (29-gage)igniter was used to initiate combustion at one end of the fabric. Airflow was controlled using a variable speed fan, with airflow speeds reaching as high as 40 cm/s. The airflow was directed along the fuel surface in either the opposed or concurrent direction.\n\nThis investigation explored two primary air flow configurations; concurrent-flow and opposed-flow. With concurrent-flow air flows in the same direction as the flame spread and in opposed-flow air flows in the opposite direction of flame spread. Flames were observed in the top and edge profiles and data was collected on flame size, shape, color, spread rate, and potential flame quenching. The samples were placed in a small flow duct (76 mm x 76 mm cross section) that allowed for airflow across the fabric. Other sample shapes were utilized as well including spheres and cylinders.",
+ "hypothesis": "BASS experiments were based on the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, oxygen concentration, temperature, etc.) To test this hypothesis with any but the thinnest materials requires extended microgravity time – longer than available in drop towers or parabolic aircraft.",
+ "researchImpacts": "Current NASA spacecraft materials selection is based on a standard test method (NASA–STD–6001 Test 1) that segregates material based on 1-g behavior without consideration of low gravity effects. A critical element of this understanding is the radiative heat emission from the flame. These results are used in first order models and predictions of heat release in spacecraft fires and as a means to extend heat release data from tests like the NASA cone calorimeter test (NASA–STD–6001 Test 2) to a performance-based material selection process. Using nitrogen as a flame suppressant in microgravity provides a direct link to current and planned extinguishment techniques.\nBASS results provide essential guidance to ground-based microgravity combustion research efforts. Detailed combustion models are validated using the simpler flow environment afforded by tests in microgravity. Once validated, they can be used to build more complex combustion models needed to capture the important details of flames burning in normal gravity. These models have wide applicability to the general understanding of many terrestrial combustion problems and will guide novel spacecraft design and ensure the safety of future crewed missions.",
+ "experimentHardware": "Microgravity Science Glovebox",
+ "experimentHardwareLink": "https://www1.grc.nasa.gov/space/iss-research/msg/",
+ "flightProgram": "International Space Station (ISS)",
+ "projectType": "Microgravity Investigation",
+ "researchArea": "Combustion Science",
+ "subResearchArea": "Spacecraft Fire Safety",
+ "investigationStartDate": "10-01-2009",
+ "investigationEndDate": "06-30-2013",
+ "managingNasaCenter": "Glenn Research Center (GRC)",
+ "doi": "10.60555/58h4-dy80",
+ "totalFileSize": 163551372412.0,
+ "releaseDate": "30-Jun-2013",
+ "funding": "",
+ "licenseName": "Creative Commons Zero v1.0 Universal",
+ "publications": [
+  {
+   "title": "The Microgravity Science Glovebox as a Platform for Exploration Research on the International Space Station",
+   "authorList": "Spivey Reggie, Luz Paul",
+   "doi": "10.2514/6.2006-941"
+  },
+  {
+   "title": "Opposed-flow flame spread: A comparison of microgravity and normal gravity experiments to establish the thermal regime",
+   "authorList": "Bhattacharjee Subrata, Laue Matthew, Carmignani Luca, Ferkul Paul, Olson Sandra",
+   "doi": "10.1016/j.firesaf.2015.11.011"
+  },
+  {
+   "title": "Simplified model for predicting difference between flammability limits of a thin material in normal gravity and microgravity environments",
+   "authorList": "Takahashi Shuhei, Ebisawa Tomoya, Bhattacharjee Subrata, Ihara Tadayoshi",
+   "doi": "10.1016/j.proci.2014.07.017"
+  },
+  {
+   "title": "A Correlation for an Effective Flow Velocity for Capturing the Boundary Layer Effect in Opposed-Flow Flame Spread over Thin Fuels",
+   "authorList": "S Bhattacharjee, R Nagarkar, Y Nakamura",
+   "doi": "10.1080/00102202.2014.900056"
+  },
+  {
+   "title": "Radiation signature in opposed-flow flame spread",
+   "authorList": "Bhattacharjee Subrata, Paolini Christopher P., Miller Fletcher, Nagarkar Rohit",
+   "doi": "10.1504/PCFD.2012.048249"
+  },
+  {
+   "title": "OS24-1 The Effect of Boundary Layer on Blow-Off Extinction in Opposed-Flow Flame Spread: Results of Experiments and Simplified Analysis(invited,Scale modeling on solid combustion,OS24 Scale modeling,FLUID AND THERMODYNAMICS)",
+   "authorList": "Bhattacharjee Subrata, Cartnignani Luca",
+   "doi": "10.1299/jsmeatem.2015.14.289"
+  },
+  {
+   "title": "Role of Gas Radiation in the Mechanism of Opposed-Flow Flame Spread in a Microgravity Environment",
+   "authorList": "JR Villaraza, L Carmignani, S Bhattacharjee",
+   "doi": ""
+  },
+  {
+   "title": "Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment",
+   "authorList": "P Ferkul, SL Olson, F Takahashi, M Endo, MC Johnston, JS Tien",
+   "doi": ""
+  },
+  {
+   "title": "A novel apparatus for flame spread study",
+   "authorList": "S Bhattacharjee, M Bundy, C Paolini, G Patel, W Tran.",
+   "doi": "10.1016/j.proci.2012.05.076"
+  },
+  {
+   "title": "Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets",
+   "authorList": "GR Bornand, FJ Miller, JM Pepper, SL Olson, IS Wichman",
+   "doi": ""
+  }
+ ],
+ "contacts": [
+  {
+   "firstName": "Sandra L.",
+   "lastName": "Olson",
+   "affiliation": "NASA GRC"
+  },
+  {
+   "firstName": "Paul",
+   "lastName": "Ferkul",
+   "affiliation": "NASA GRC"
+  },
+  {
+   "firstName": "Funiaki",
+   "lastName": "Takahashi",
+   "affiliation": "Case Western Reserve University"
+  },
+  {
+   "firstName": "James",
+   "lastName": "T'ien",
+   "affiliation": "Case Western Reserve University"
+  }
+ ],
+ "files": [
+  {
+   "file_name": "PSI-26_Experimental table_BASS.csv",
+   "file_size": 4726,
+   "category": "Experimental table"
+  },
+  {
+   "file_name": "PSI-26_Presentations_FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012.pdf",
+   "file_size": 3212109.0,
+   "category": "Presentations"
+  },
+  {
+   "file_name": "PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+   "file_size": 4640227.0,
+   "category": "Presentations"
+  },
+  {
+   "file_name": "PSI-26_Presentations_Flammability Aspects of Fabric_USNationalCombustion2013.pdf",
+   "file_size": 2804257.0,
+   "category": "Presentations"
+  },
+  {
+   "file_name": "PSI-26_Reports_SPICE_FinalReport.pdf",
+   "file_size": 553693.0,
+   "category": "Reports"
+  },
+  {
+   "file_name": "PSI-26_Reports_BASS_FinalReport.pdf",
+   "file_size": 553693.0,
+   "category": "Reports"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_SLICE_SysReqDesignReview.pdf",
+   "file_size": 1429180.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Presentations_Crew Training 2010.pdf",
+   "file_size": 1348519.0,
+   "category": "Presentations"
+  },
+  {
+   "file_name": "PSI-26_Presentations_Crew Training 2011.pdf",
+   "file_size": 1339967.0,
+   "category": "Presentations"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_BASS_SysAcceptanceReview.1.pdf",
+   "file_size": 2892502.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_BASS_SysAcceptanceReview.2.pdf",
+   "file_size": 1804490.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_SPICE Housing.pdf",
+   "file_size": 192768.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_SPICE_FanHousing.pdf",
+   "file_size": 133889.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.Flat.Fuel.Sample2mm.pdf",
+   "file_size": 52408.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Sibal.Flat.Sample.pdf",
+   "file_size": 121535.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.SampleAssembly.pdf",
+   "file_size": 65227.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Spherical.Sample_2cm.pdf",
+   "file_size": 78407.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Blk.PMMA.Rod.pdf",
+   "file_size": 78284.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.Flat.Fuel.Sample_2cm.pdf",
+   "file_size": 129048.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.Flat.Samples_2cm.pdf",
+   "file_size": 58392.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Sibal.Flat.Fuel.Sample_2cm.pdf",
+   "file_size": 55267.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.Spherical.Section.pdf",
+   "file_size": 595300.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.Blk.Rod.Sample.pdf",
+   "file_size": 65282.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_PMMA.Flat_1cm.pdf",
+   "file_size": 1108850.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_SPICE-front-window.pdf",
+   "file_size": 148197.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_60054MAFH000_C.pdf",
+   "file_size": 562119.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_SolidFuelFrame.pdf",
+   "file_size": 97640.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Flat.Sample.Frame_2cm.pdf",
+   "file_size": 586059.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Flat.Sample.Frame_1cm.pdf",
+   "file_size": 586727.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Drawing_Solid.Fuel.Sample_2cmSphere.pdf",
+   "file_size": 54006.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Engineering Documents_Short Nozzle MFA10771.pdf",
+   "file_size": 52766.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-26_Science Documents_SRD_BASS.pdf",
+   "file_size": 884257.0,
+   "category": "Science Documents"
+  },
+  {
+   "file_name": "PSI-26_Science Documents_DLD_BASS.pdf",
+   "file_size": 69653.0,
+   "category": "Science Documents"
+  }
+ ],
+ "file_count": 211
+}

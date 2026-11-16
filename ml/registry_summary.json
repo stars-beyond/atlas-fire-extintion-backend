@@ -1,0 +1,85 @@
+{
+ "formato": "atlas.ml.registry/1",
+ "ensaios": 1668,
+ "com_desfecho": 760,
+ "por_investigacao": {
+  "ZARM barreiras de metal": {
+   "ensaios": 31,
+   "com_desfecho": 30,
+   "com_alvo_numerico": 22,
+   "com_arquivos": 30,
+   "grupos_de_divisao": 31
+  },
+  "ZARM vãos de ar": {
+   "ensaios": 26,
+   "com_desfecho": 0,
+   "com_alvo_numerico": 0,
+   "com_arquivos": 26,
+   "grupos_de_divisao": 26
+  },
+  "BASS-II": {
+   "ensaios": 129,
+   "com_desfecho": 123,
+   "com_alvo_numerico": 0,
+   "com_arquivos": 125,
+   "grupos_de_divisao": 107
+  },
+  "FLEX": {
+   "ensaios": 274,
+   "com_desfecho": 274,
+   "com_alvo_numerico": 258,
+   "com_arquivos": 0,
+   "grupos_de_divisao": 80
+  },
+  "ACME CFI-G": {
+   "ensaios": 333,
+   "com_desfecho": 333,
+   "com_alvo_numerico": 284,
+   "com_arquivos": 327,
+   "grupos_de_divisao": 23
+  },
+  "ACME Flame Design": {
+   "ensaios": 327,
+   "com_desfecho": 0,
+   "com_alvo_numerico": 0,
+   "com_arquivos": 307,
+   "grupos_de_divisao": 22
+  },
+  "SPICE": {
+   "ensaios": 469,
+   "com_desfecho": 0,
+   "com_alvo_numerico": 0,
+   "com_arquivos": 0,
+   "grupos_de_divisao": 11
+  },
+  "CFI": {
+   "ensaios": 79,
+   "com_desfecho": 0,
+   "com_alvo_numerico": 0,
+   "com_arquivos": 0,
+   "grupos_de_divisao": 23
+  }
+ },
+ "desfechos": {
+  "extinguished": 390,
+  "burned": 150,
+  "sustained_until_stop": 88,
+  "not_ignited": 71,
+  "disrupted": 61
+ },
+ "familias": {
+  "gas": 1129,
+  "droplet": 353,
+  "solid": 186
+ },
+ "zarm": {
+  "pares_duplicados": 4,
+  "barreiras": 45,
+  "barreiras_por_resultado": {
+   "No": 40,
+   "Yes": 5,
+   "Critical": 4
+  },
+  "ensaios_unicos": 53
+ }
+}

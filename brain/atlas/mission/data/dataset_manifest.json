@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-11-15T02:00:48.758375+00:00",
+  "source_project": "CosmoEX Flame RAG v6 (rag-flame)",
+  "validated": false,
+  "files": {
+    "conditions.sqlite": {
+      "from": "data/conditions_v1/conditions.sqlite",
+      "sha256": "530f54cf14a97015012ab88f32be6fc49ad9f2d0b29b2570d4e8df9ee819f9b2",
+      "source_sha256": "530f54cf14a97015012ab88f32be6fc49ad9f2d0b29b2570d4e8df9ee819f9b2"
+    },
+    "solid_tests.json": {
+      "from": "data/conditions_v1 + originais data/flame_v6/raw",
+      "tests": 140,
+      "by_experiment": {
+        "BASS-II": 129,
+        "Saffire-I": 2,
+        "Saffire-II": 9
+      },
+      "sha256": "b2a433a396a18769c340abc87a7527e10598d8b952daf25b40ef261f6fc6e12e"
+    },
+    "formulas_physical.jsonl": {
+      "from": "data/formulas_v2/full/groups.jsonl",
+      "groups": 897,
+      "sha256": "755b38052ab5ce6c485411a76a61295c9eb195cec6e71a61dc756f3daf350899"
+    }
+  }
+}

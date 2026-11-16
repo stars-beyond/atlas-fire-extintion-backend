@@ -1,0 +1,14 @@
+[Unit]
+Description=Atlas: puxa o GitHub e sobe o backend se houver commit novo
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=@APP_DIR@
+Environment=APP_DIR=@APP_DIR@
+Environment=BRANCH=@BRANCH@
+ExecStart=@APP_DIR@/deploy/deploy.sh
+TimeoutStartSec=45min
+Nice=5

@@ -1,0 +1,44 @@
+# Uma cor (blue ou green) da API de produção. Quem sobe é o deploy/lib.sh:
+#   COLOR=green docker compose -p atlas-fire-extintion-backend-api-green --project-directory /opt/atlas \
+#     -f deploy/api.compose.yml up -d --build
+# Caminhos relativos ao checkout (--project-directory); as chaves vêm do .env do checkout.
+# Entra na rede do backend: fala com banco, embedder e RAG pelos nomes de sempre e o nginx a encontra como
+# api-blue ou api-green.
+services:
+  atlas-api:
+    build: ./api
+    environment:
+      DATABASE_URL: postgresql://atlas:atlas@db:5432/atlas
+      EMBEDDER_URL: http://embedder:8000
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ATLAS_MODEL: ${ATLAS_MODEL:-claude-opus-5-5}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      CHAT_MODEL: ${CHAT_MODEL:-}
+      RAG_URL: http://rag:8000
+      SIM_CONFIG: /data/sim/lab3d.json
+      EXTERNAL_TESTS: /data/external/zarm.json
+      PORT: "8787"
+    volumes:
+      - ./data/seed/sim:/data/sim:ro
+      - ./data/seed/external:/data/external:ro
+    restart: unless-stopped
+    # atende o visitante: pesa mais na disputa por CPU que os modelos e a ingestão, e não é a primeira a morrer
+    # se a memória acabar (ver deploy/compose.prod.yml)
+    cpu_shares: 2048
+    oom_score_adj: -100
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # ao desligar, a API termina as requisições em andamento (até 190 s, ver service/main.go) antes de sair
+    stop_grace_period: 200s
+    networks:
+      backend:
+        aliases: ["api-${COLOR:?}"]
+
+networks:
+  backend:
+    external: true
+    name: ${STACK:?}_default

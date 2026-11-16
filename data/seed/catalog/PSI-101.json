@@ -1,0 +1,221 @@
+{
+ "accession": "PSI-101",
+ "investigationAcronym": "SAME-R",
+ "title": "Smoke Aerosol Measurement Experiment-Reflight",
+ "description": "",
+ "objective": "Similar to the original SAME investigation, the primary objective of the SAME-R investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment. One of the problems encountered during the SAME investigation was that after the thermal precipitators were returned to the ground, it was found that all the TEM grids were severely contaminated with some unidentified foreign particles, making these grids unusable although some of them showed shapes of certain types of smoke particles. Based on that experience the SAME-R investigation employed several modification covering new materials, extended operating conditions, and diagnostic equipments.",
+ "approach": "SAME-R utilized the SAME hardware used on-orbit. Based on the experience gained from SAME, SAME-R included the following modifications: 1) a new test material,\nPyrell®, an intumescent fire-retardant foam by Foamex, was introduced to replace DBP samples, 2) test conditions were broadened including higher heating temperatures and no-flow during sample heating time, and 3) a new instrument, M-pass, developed in-house GRC, was used to replace one of the two Commercial Diagnostic Enclosures that includes a DustTrak and an ionization detector used in SAME. SAME-R flight tests were conducted from July 16, to September 9, 2010, successfully completing 66 test points. After SAME-R flight tests, three major post–flight ground tests were performed to improve data reduction process and to validate the lognormal distribution assumption, the key to the moment method employed by SAME and SAME-R.",
+ "hypothesis": "The three hypotheses that motivated the original SAME investigation is also applicable for the reflight SAME-R investigation:\nIn a μg environment, with the absence of the strong buoyancy-induced flows, smoke particle growth from a pyrolyzing/smoldering source, as a result of nucleation, condensation, and coagulation, will lead to larger particles compared to those produced in 1g. The formation of the larger particles is favored by the expected higher vapor concentration and smoke residence times near the source due to the reduced velocities and mixing at μg conditions. In particular, it is hypothesized that liquid aerosol smokes produced in microgravity will exhibit substantially larger droplet sizes than under the same conditions in normal gravity (with a corresponding decrease in the particle number density for the same mass of smoke). The change in the size distribution and number density will, in turn, affect the response of the smoke detectors and possibly result in some detectors not producing an alarm when exposed to this smoke.",
+ "researchImpacts": "Along with the results from the original SAME investigation, the results from SAME-R can lead to technology for an advanced fire detector for future spacecraft that will be used for long duration missions. SAME will provide quantitative data on the sensitivity of these detectors to reduced gravity smokes that will allow evaluation of the adequacy of these existing technologies using relevant data. The current Fire Prevention, Detection, and Suppression (FPDS) program plan allows for the re-evaluation of future sensor technology, to allow new technology and capability to be utilized. The results from SAME are needed to provide the reduced gravity baseline data against which future detection technology developments can be evaluated. The smoke detectors developed from the results of SAME can also be useful in other extreme environments on Earth, such as submarines or underwater laboratories. Accurate detection of smoke in these environments can save lives.",
+ "experimentHardware": "Comparitive Soot Diagnostic Hardware; Refer to final report",
+ "experimentHardwareLink": "https://ntrs.nasa.gov/api/citations/19960008413/downloads/19960008413.pdf",
+ "flightProgram": "International Space Station (ISS)",
+ "projectType": "Microgravity Investigation",
+ "researchArea": "Combustion Science",
+ "subResearchArea": "Spacecraft Fire Safety",
+ "investigationStartDate": "07-01-2010",
+ "investigationEndDate": "09-30-2010",
+ "managingNasaCenter": "Glenn Research Center (GRC)",
+ "doi": "10.60555/2np7-jv14",
+ "totalFileSize": 6308124750.0,
+ "releaseDate": "18-Sep-2024",
+ "funding": "",
+ "licenseName": "Creative Commons Zero v1.0 Universal",
+ "publications": [
+  {
+   "title": "Smoke Aerosol Measurement Experiment-2: Comparison of Flight Experiment Results with Ground Test Results",
+   "authorList": "Meyer Marit E., Urban David L., Ruff Gary A., Mulholland George, Yuan Zeng-guang, Bryg Victoria, Cleary Thomas, Yang Jiann",
+   "doi": "10.2514/6.2013-3433"
+  },
+  {
+   "title": "Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection",
+   "authorList": "D Urban, G Ruff, G Mulholland, M Meyer, ZG Yuan, T Cleary, J Yang, P Greenberg, V Bryg",
+   "doi": ""
+  },
+  {
+   "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2",
+   "authorList": "Urban David, Ruff Gary, Greenberg Paul, Fischer David, Meyer Marit, Mulholland George, Yuan Zeng-guang, Bryg Victoria, Cleary Thomas, Yang Jiann",
+   "doi": "10.2514/6.2012-3536"
+  },
+  {
+   "title": "Preliminary Results from the Smoke Aerosol Measurement Experiment - Reflight",
+   "authorList": "D Urban, G Ruff, M Meyer, T Cleary, J Yang, G Mulholland, ZG Yuan, V Bryg",
+   "doi": ""
+  },
+  {
+   "title": "Detection of Smoke from Microgravity Fires",
+   "authorList": "DL Urban, D Griffin, G Ruff, T Cleary, J Yang, G Mulholland, ZG Yuan",
+   "doi": ""
+  },
+  {
+   "title": "Evaluation of spacecraft smoke detector performance in the low-gravity environment",
+   "authorList": "Meyer Marit E., Urban David L., Mulholland George W., Bryg Victoria, Yuan Zeng-Guang, Ruff Gary A., Cleary Thomas, Yang Jiann",
+   "doi": "10.1016/j.firesaf.2018.04.004"
+  }
+ ],
+ "contacts": [
+  {
+   "firstName": "Zeng-guang",
+   "lastName": "Yuan",
+   "affiliation": "NASA GRC"
+  },
+  {
+   "firstName": "Claire",
+   "lastName": "Fortenberry",
+   "affiliation": "NASA GRC"
+  },
+  {
+   "firstName": "David",
+   "lastName": "Urban",
+   "affiliation": "NASA GRC"
+  },
+  {
+   "firstName": "Jiann",
+   "lastName": "Yang",
+   "affiliation": "National Institute for Standards and Technology (NIST)"
+  },
+  {
+   "firstName": "Thomas",
+   "lastName": "Cleary",
+   "affiliation": "National Institute for Standards and Technology (NIST)"
+  },
+  {
+   "firstName": "George",
+   "lastName": "Mulholland",
+   "affiliation": "University of Maryland"
+  }
+ ],
+ "files": [
+  {
+   "file_name": "PSI-101_Experimental table_SAME-R.csv",
+   "file_size": 5674,
+   "category": "Experimental table"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_SAME EIRD Rev 2.00 02-25-05 HIgh Q.pdf",
+   "file_size": 5378409.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Reports_SAME-R_Final Report.pdf",
+   "file_size": 4578437.0,
+   "category": "Reports"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_Drawing_SAME Aging Chamber.PDF",
+   "file_size": 212840.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHD509 P-Trak Condenser Tube Modification.pdf",
+   "file_size": 162861.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA150-B Aging Chamber Assembly.pdf",
+   "file_size": 335105.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHD126-B Smoke Generation Tube.pdf",
+   "file_size": 243826.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA417-B Kapton Sample Assembly.pdf",
+   "file_size": 149738.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf",
+   "file_size": 169403.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA415 Ignitor Wire Coil Assembly (for 0 .250 OD samples).pdf",
+   "file_size": 98185.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA414-A Lampwick Sample Assembly.pdf",
+   "file_size": 151181.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHP000-C SAME Fluids System Schematic.pdf",
+   "file_size": 258861.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_S1171MFHA401 Pyrell Sample Assembly.pdf",
+   "file_size": 154569.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_80089MFHP000-E SAME Fluids System Schematic.pdf",
+   "file_size": 333332.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA416-A Silicone Sample Assembly.pdf",
+   "file_size": 152496.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf",
+   "file_size": 161926.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA410-A Teflon Sample Assembly.pdf",
+   "file_size": 156530.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHD413 Teflon Sample Part.pdf",
+   "file_size": 150152.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_60089MFHA411 Teflon Ignitor Wire Coil Assembly.pdf",
+   "file_size": 175857.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_Fluids Control Unit, Schematic, left side-1.pdf",
+   "file_size": 1163957.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_80089MFHP000-E SAME Fluids System Schematic, right side-1.pdf",
+   "file_size": 1611750.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Engineering Documents_SAME_Wire_Report.pdf",
+   "file_size": 1852991.0,
+   "category": "Engineering Documents"
+  },
+  {
+   "file_name": "PSI-101_Science Documents_SAME_Baseline Concept Description Document_001 Rev A.pdf",
+   "file_size": 247315.0,
+   "category": "Science Documents"
+  },
+  {
+   "file_name": "PSI-101_Science Documents_SAME_Operations Manual_007.pdf",
+   "file_size": 699811.0,
+   "category": "Science Documents"
+  },
+  {
+   "file_name": "PSI-101_Reference Data_SAME_Software Description Document_003 Rev A.pdf",
+   "file_size": 270540.0,
+   "category": "Reference Data"
+  },
+  {
+   "file_name": "PSI-101_Reference Data_SAME_Software Requirement Document_004 Rev D.pdf",
+   "file_size": 400833.0,
+   "category": "Reference Data"
+  }
+ ],
+ "file_count": 342
+}

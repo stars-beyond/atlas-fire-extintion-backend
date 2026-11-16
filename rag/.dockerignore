@@ -1,0 +1,13 @@
+*
+!requirements.lock.txt
+!backend/
+!backend/**
+!data/
+!data/flame_v6/
+!data/flame_v6/corpus.json
+!data/formulas_v2/
+!data/formulas_v2/full/
+!data/formulas_v2/full/catalog.jsonl
+**/.env
+**/__pycache__
+**/*.pyc

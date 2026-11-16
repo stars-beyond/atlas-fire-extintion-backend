@@ -1,0 +1,13 @@
+[Unit]
+Description=Atlas: busca novidades no PSI e atualiza o acervo se algo mudou
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=@APP_DIR@
+Environment=APP_DIR=@APP_DIR@
+ExecStart=@APP_DIR@/deploy/refresh.sh
+TimeoutStartSec=2h
+Nice=10

@@ -1,0 +1,9 @@
+fastembed==0.4.2
+psycopg[binary]==3.2.3
+pgvector==0.3.6
+pymupdf==1.24.14
+numpy==1.26.4
+scipy==1.14.1          # motor de missão (atlas/mission): integração do balanço térmico e da tabela de propagação
+fastapi==0.115.5
+uvicorn==0.32.1
+requests==2.32.3

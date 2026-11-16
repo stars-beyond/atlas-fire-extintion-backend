@@ -1,0 +1,9 @@
+# Etapa 4 (train_tabular.py). As etapas 1, 2, 3 e 5 usam só a biblioteca padrão.
+numpy>=1.26
+scikit-learn>=1.4
+
+# Etapas 6 e 7 (ainda por escrever): instale quando chegar nelas.
+# scipy          # ler .mat do ZARM
+# h5py           # ler .hdf5 do ZARM
+# opencv-python  # vídeo
+# torch          # redes

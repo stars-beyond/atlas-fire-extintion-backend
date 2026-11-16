@@ -1,0 +1,90 @@
+{
+  "schema": "lab3d.validation/1",
+  "date": "2026-11-15",
+  "engine": "lab3d v2",
+  "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+  "tier": "padrao",
+  "burn_time_s": 5,
+  "criterion": "the flame counts as sustained if, in the last 0.4 s of 5 s simulated, it releases more than 1 W and exceeds 1200 K; O2 bisection in 7 steps",
+  "sample": {
+    "material": "pmma",
+    "shape": "sphere",
+    "radius_cm": 0.6
+  },
+  "pressure_psi": 14.7,
+  "physics": {
+    "K0": 210000000,
+    "HREF": 0.19,
+    "TA": 15000,
+    "RAD": 2,
+    "BETA": 450,
+    "D0": 1,
+    "EXP": 0.1,
+    "BLOW": 1,
+    "PR": 0.7,
+    "DT": 0.006
+  },
+  "material_params": {
+    "s": 1.92,
+    "pyrK": 650,
+    "M": 70,
+    "L": 0.6,
+    "inhib": 1
+  },
+  "points": [
+    {
+      "gravity": 0,
+      "wind_cm_s": 1,
+      "o2_min": 14.93,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0,
+      "wind_cm_s": 2,
+      "o2_min": 14.15,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0,
+      "wind_cm_s": 5,
+      "o2_min": 13.37,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0,
+      "wind_cm_s": 10,
+      "o2_min": 13.84,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0,
+      "wind_cm_s": 20,
+      "o2_min": 14.54,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0,
+      "wind_cm_s": 50,
+      "o2_min": 16.41,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0.165,
+      "wind_cm_s": 10,
+      "o2_min": 14.07,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 0.378,
+      "wind_cm_s": 10,
+      "o2_min": 14.85,
+      "plus_minus": 0.04
+    },
+    {
+      "gravity": 1,
+      "wind_cm_s": 10,
+      "o2_min": 16.49,
+      "plus_minus": 0.04
+    }
+  ]
+}
